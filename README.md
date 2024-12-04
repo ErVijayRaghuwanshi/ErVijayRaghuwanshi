@@ -39,7 +39,7 @@ Welcome to my GitHub! I’m a passionate **Software Engineer** with 3+ years of 
 ### 🖼 [Prompt Gallery](https://ervijayraghuwanshi.github.io/prompt-gallery)  
 Interactive image search interface with 5,000+ AI-generated images. Built an engaging and user-friendly gallery for exploring the power of text-to-image generation.  
 
-### 💬 [Zerodha Support Chatbot & Real-Time Stock Market News](http://216.48.180.86:55000/)  
+### 💬 [Zerodha Support RAG Chatbot](http://122.175.194.99:55000/)  
 Developed intelligent chatbots powered by **RAG**, vector databases, and LLMs for exceptional customer assistance and real-time market insights.  
 
 ### 🛠 **LightSabre on Laptop** (Ideathon 2024 Award - 2nd Prize 🏆)  
