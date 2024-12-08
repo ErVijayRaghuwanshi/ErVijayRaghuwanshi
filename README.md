@@ -16,10 +16,6 @@ Welcome to my GitHub! I’m a passionate **Software Engineer** with 3+ years of 
 ## 🚀 My Technical Toolbox  
 
 ### **Languages & Frameworks**  
-- 🐍 **Python**, JavaScript, Shell Scripting, HTML, CSS  
-- 📚 **VueJS**, **FastAPI**, **Flask**  
-
-### Programming Languages and Tools:
 - ![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white)
 - ![SQL](https://img.shields.io/badge/-SQL-4479A1?logo=microsoftsqlserver&logoColor=white)
 - ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
