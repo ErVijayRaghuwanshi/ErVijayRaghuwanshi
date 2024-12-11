@@ -1,6 +1,6 @@
 # 👋 Hi, I’m **Vijay Raghuwanshi**  
 
-Welcome to my GitHub! I’m a passionate **Software Engineer** with 3+ years of experience in API design, cybersecurity, and building innovative GenAI applications. 🚀  
+Welcome to my GitHub! I’m a passionate **Software Engineer** with 4+ years of experience in API design, cybersecurity, IoT, and building innovative GenAI applications. 🚀  
 
 ---  
 
