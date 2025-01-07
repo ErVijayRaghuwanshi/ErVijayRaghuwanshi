@@ -1,29 +1,36 @@
+# Resume File Naming Guidelines
+
+When naming your resume file, follow these best practices to maintain a professional appearance and ensure clarity:
+
 <details>
-  <summary><strong>Resume File Naming Guidelines</strong></summary>
+  <summary><strong>Click to Expand Guidelines</strong></summary>
 
-  **1. Include Your Full Name**  
-  Incorporate your first and last name to personalize the file. For example:
-  - `John_Doe_Resume.pdf`
-  - `Jane_Smith_CV.pdf`
+  ### 1. Include Your Full Name
+  Incorporate your first and last name to personalize the file. This ensures recruiters can easily identify the document.
 
-  **2. Specify the Document Type**  
-  Clearly indicate that the file is a resume or CV.
+  **Example:**  
+  `Vijay_Raghuwanshi`
 
-  **3. Add Job Title or Position (Optional)**  
-  Including the job title you're applying for can make your resume stand out and show that it's tailored for a specific role. For instance:
-  - `John_Doe_Marketing_Manager_Resume.pdf`
-  - `Jane_Smith_Software_Engineer_CV.pdf`
+  ### 2. Specify Your Role or Title
+  Add the role or title relevant to your experience or the job you’re applying for. This makes your resume appear tailored and relevant.
 
-  **4. Use Hyphens or Underscores**  
-  Separate words with hyphens or underscores to enhance readability. Avoid using spaces or other special characters, as they might not be compatible with some applicant tracking systems.
+  **Example:**  
+  `Vijay_Raghuwanshi_SDE`
 
-  **5. Avoid Version Numbers and Generic Terms**  
-  Refrain from using version numbers (e.g., `Resume_v2.pdf`) or generic file names like `Resume.pdf`. These can appear unprofessional and may confuse recruiters.
+  ### 3. Include "Resume" or "CV"
+  Specify the document type for clarity, especially if recruiters deal with multiple file types.
 
-  **6. Keep It Concise**  
-  Aim for a file name that is descriptive yet succinct, ideally around 24 characters, to ensure the entire name is visible to recruiters.
+  **Example:**  
+  `Vijay_Raghuwanshi_SDE_Resume`
 
-  **7. Use Appropriate File Formats**  
-  Save your resume in formats that preserve formatting and are widely accepted, such as PDF or DOCX. This ensures compatibility with various systems and devices.
+  ### 4. Save as PDF
+  Use the PDF format to preserve the formatting and ensure compatibility with most devices and software.
+
+  **Final Example:**  
+  `Vijay_Raghuwanshi_SDE_Resume.pdf`
+
+  ### Additional Tips:
+  - **Avoid Spaces:** Use underscores (`_`) or hyphens (`-`) instead of spaces for compatibility with applicant tracking systems (ATS).
+  - **Keep It Simple:** Avoid adding unnecessary details like version numbers (e.g., `Resume_v2.pdf`) or generic names (e.g., `MyResume.pdf`).
 
 </details>
