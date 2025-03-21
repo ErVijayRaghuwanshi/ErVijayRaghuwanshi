@@ -55,7 +55,7 @@ ollama_llm = OpenAIModel(model_name=llm_model, provider=OpenAIProvider(base_url=
 
 from pydantic_ai.models.groq import GroqModel
 
-groq_llm = GroqModel('llama-3.3-70b-versatile', api_key="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")
+groq_llm = GroqModel('llama-3.3-70b-versatile')
 agent = Agent(groq_llm, system_prompt=system_prompt)
 
 # Define a tool for document retrieval using your Chroma vector retriever
