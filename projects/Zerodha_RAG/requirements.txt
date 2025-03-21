@@ -1,0 +1,6 @@
+langchain-chroma==0.1.2
+langchain-ollama
+langchain_community
+beautifulsoup4==4.12.3
+next_asyncio==1.6.0
+lxml==5.3.1
