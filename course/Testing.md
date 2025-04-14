@@ -1,5 +1,3 @@
-Below is an example of detailed documentation for the authentication system and its tests. You can save it as a Markdown file (for example, `AUTH_SYSTEM_DOC.md`) for future reference.
-
 ---
 
 # Authentication System Documentation
