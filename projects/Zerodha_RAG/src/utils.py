@@ -78,7 +78,8 @@ def get_logger(name, log_level='DEBUG', log_file=None) -> logging.Logger:
 from ollama import chat, generate
 
 # llm_model = "gemma3:4b"
-llm_model = "llama3.2"
+# llm_model = "llama3.2"
+llm_model = "llama3.1"
 
 def text_generation(prompt, system_prompt=""):
     stream = generate(

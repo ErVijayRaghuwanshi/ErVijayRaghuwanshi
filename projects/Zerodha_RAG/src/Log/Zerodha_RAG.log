@@ -779,3 +779,287 @@ Source: Zerodha Support Center - Account Modification and Segment Addition.
 2025-03-21 00:53:59,602 - INFO     - 106 - rag_agent          - Bot-response: I don't have any information about your name, as our conversation just started and you didn't mention your name. I'm a large language model, I don't have personal opinions or memories, and I don't retain information about individual users. Each time you interact with me, it's a new conversation. If you'd like to share your name, I'd be happy to chat with you about it!
 2025-03-21 00:54:25,659 - INFO     - 100 - rag_agent          - User-input: okay, what is my name?
 2025-03-21 00:54:29,658 - INFO     - 106 - rag_agent          - Bot-response: I don't have any information about your name. You didn't mention your name during our conversation, and I don't have the ability to retain information about individual users. If you'd like to share your name, I'd be happy to chat with you about it!
+2025-03-21 08:16:58,138 - DEBUG    -  20 - <module>           - Embeddings loaded
+2025-03-21 08:16:58,298 - DEBUG    -  48 - <module>           - Zerodha retriever loaded.
+2025-03-21 08:32:24,022 - INFO     - 100 - rag_agent          - User-input: Why hasn't my withdrawal request been processed even though it has been several days since I submitted it?
+2025-03-21 08:32:26,795 - INFO     -  88 - retrieve_docs      - retriever docs: 2 for query: withdrawal request processing time and troubleshooting
+2025-03-21 08:32:27,571 - INFO     - 106 - rag_agent          - Bot-response: According to the Zerodha support documentation, the withdrawal processing time can take several days. It's recommended to check the withdrawable balance and ensure that the withdrawal request was successful. If the issue persists, you can contact Zerodha support for further assistance. Additionally, it's essential to note that withdrawal requests are processed during working hours, and bank holidays may affect the processing time. 
+
+To get more information on your specific case, I would recommend checking your account status and contacting Zerodha support directly. They will be able to provide more detailed information on the status of your withdrawal request and help you resolve any issues. 
+
+Please let me know if there's anything else I can help you with.
+2025-03-21 08:33:07,505 - INFO     - 100 - rag_agent          - User-input: Hi my name is Vijay
+2025-03-21 08:33:08,001 - INFO     - 106 - rag_agent          - Bot-response: Hello Vijay! It's nice to meet you. How can I assist you today with any Zerodha-related queries or concerns you might have?
+2025-03-21 08:35:03,973 - INFO     - 122 - generate_1         - User-input: Why hasn't my withdrawal request been processed even though it has been several days since I submitted it?
+2025-03-21 08:35:36,938 - INFO     - 135 - generate_1         - Bot-response: Based on the information provided in the support documents, here are some possible reasons why your withdrawal request hasn't been processed:
+
+1. **Account Modification**: The error message "Bank account addition cannot be processed online for your account. Please initiate request offline" suggests that you may have an NRI or minor Zerodha account holder's account that requires an offline process to add a secondary bank account.
+2. **Secondary Bank Account Issues**: If the secondary bank account is not added correctly, it might cause issues with the withdrawal request.
+3. **Signature Issues**: Ensure that your signature on the documents matches the signature in your account.
+
+To resolve this issue:
+
+1. Check if you have an NRI or minor Zerodha account holder's account and follow the offline process to add a secondary bank account, as described in the support document.
+2. Verify that your secondary bank account is added correctly and meet all the requirements specified in the support document (e.g., providing bank proof).
+3. If you have already initiated an offline request for adding a secondary bank account, wait for 48 working hours for the request to be processed.
+
+To create a new ticket or update an existing one:
+
+1. Click on "Continue" at the end of the document.
+2. Follow the instructions to create or update your ticket.
+
+You can also contact Zerodha's customer support team directly using their phone number: 080 47181888.
+2025-03-21 18:07:03,702 - DEBUG    -  21 - <module>           - Embeddings loaded
+2025-03-21 18:07:03,863 - DEBUG    -  49 - <module>           - Zerodha retriever loaded.
+2025-03-21 18:07:17,854 - INFO     - 136 - generate_1         - User-input: How do I open an account online with Zerodha?
+2025-03-21 18:08:03,291 - INFO     - 149 - generate_1         - Bot-response: To open an account online with Zerodha, follow these steps:
+
+1. Visit the website [signup.zerodha.com/minor](http://signup.zerodha.com/minor) and log in using your guardian's Zerodha account credentials.
+2. Verify your guardian's profile details by clicking on "Continue".
+3. If necessary, update your guardian's profile details (see [How to modify the guardians profile details while opening a minor account](https://support.zerodha.com/category/account-opening/minor-account/articles/open-minor-account-online#modify-guardians-profile-details)).
+4. Enter your mobile number and email ID, and verify them using OTP.
+5. Enter your PAN and the date of birth of the minor, and click on "Continue".
+6. On the DigiLocker page, enter your minor's Aadhaar number and click on "Next".
+7. Enter the OTP received and submit.
+8. Enter your bank account details of the minor, select the terms and conditions checkbox, and click on "Continue".
+9. Proceed to do In-person Verification (IPV). Both you and your minor must be present during IPV.
+10. Upload the required documents¹ and click on "Continue".
+11. Add nominees (optional).
+12. eSign using your guardian's Aadhaar.
+
+After completing these steps, your account will be opened within 48 working hours, and login credentials will be sent to your registered email ID.
+
+Note: Make sure you have all the necessary documents required for opening a minor account online, as listed in [Minor account FAQs](https://support.zerodha.com/category/account-opening/minor-account/articles/open-minor-account-online#minor-account-faqs).
+2025-03-21 18:08:32,698 - INFO     - 101 - rag_agent          - User-input: Hi my name is Vijay
+2025-03-21 18:08:50,310 - INFO     -  89 - retrieve_docs      - retriever docs: 2 for query: 
+2025-03-21 18:09:10,917 - INFO     - 107 - rag_agent          - Bot-response: Hello Vijay! Welcome to Zerodha's support chat. I'm here to assist you with any queries related to your trading or account-related issues with Zerodha. Please let me know how I can help today?
+2025-03-21 18:31:09,683 - DEBUG    -  21 - <module>           - Embeddings loaded
+2025-03-21 18:31:09,848 - DEBUG    -  49 - <module>           - Zerodha retriever loaded.
+2025-03-21 18:31:21,766 - INFO     -  85 - rag_agent          - User-input: Hi my name is Vijay
+2025-03-21 18:31:41,005 - INFO     -  91 - rag_agent          - Bot-response: Since this is a greeting and does not require referencing any specific Zerodha documentation or knowledge, I will respond directly as per the guidelines.
+
+However, if you're looking for some information on how your account or services are set up, or have any questions about our platforms that I can help with, feel free to ask!
+2025-03-21 18:32:47,753 - DEBUG    -  21 - <module>           - Embeddings loaded
+2025-03-21 18:32:47,916 - DEBUG    -  49 - <module>           - Zerodha retriever loaded.
+2025-03-21 18:33:07,918 - INFO     -  85 - rag_agent          - User-input: Hi my name is Vijay
+2025-03-21 18:33:21,770 - INFO     -  91 - rag_agent          - Bot-response: Since the user's initial greeting does not seem to be related to any specific Zerodha-related question, I will provide a friendly response:
+
+"Hello Vijay, welcome to Zerodha's support chat! How can we assist you today with your trading or account queries?"
+2025-03-21 18:34:37,155 - INFO     -  85 - rag_agent          - User-input: How to log in to the Zerodha Console
+2025-03-21 18:34:45,947 - INFO     -  73 - retrieve_docs      - retriever docs: 2 for query: Logging into Zerodha Console
+2025-03-21 18:35:15,311 - INFO     -  91 - rag_agent          - Bot-response: To log in to the Zerodha Console, you can follow these steps:
+
+1. Visit console.zerodha.com.
+2. Click on LOGIN WITH KITE.
+3. Enter your Client ID and Password.
+4. Click on Login.
+
+Alternatively, after logging into the Kite app, click on 'LOGIN WITH KITE' on the Zerodha Console page to proceed with the login process without having to enter your client ID and password again. 
+
+You can also opt for Two Factor Authentication (2FA) for an additional layer of security by clicking on 'Enable 2-Factor Authentication'.
+2025-03-21 18:37:36,585 - DEBUG    -  21 - <module>           - Embeddings loaded
+2025-03-21 18:37:36,751 - DEBUG    -  42 - <module>           - Zerodha retriever loaded.
+2025-03-21 18:37:53,000 - INFO     -  78 - rag_agent          - User-input: Hi
+2025-03-21 18:38:00,271 - INFO     -  84 - rag_agent          - Bot-response: {"type": "function", "name": "general_greeting"}
+2025-03-21 18:38:10,046 - INFO     -  78 - rag_agent          - User-input: Hi
+2025-03-21 18:38:20,240 - INFO     -  84 - rag_agent          - Bot-response: {"type": "function", "name": "general_response"} 
+("How can I help you with your Zerodha-related queries today? You may ask about our brokers, trading software, account opening process or any other topic.")
+2025-03-21 18:38:38,510 - INFO     -  78 - rag_agent          - User-input: My name Is vijay
+2025-03-21 18:38:47,404 - INFO     -  66 - retrieve_docs      - retriever docs: 2 for query: Vijay
+2025-03-21 18:39:24,224 - INFO     -  84 - rag_agent          - Bot-response: {"type": "answer", "text": "Hello Vijay, I see that you have the following options regarding your account modification: \n You can update your profile information on the incometax.gov.in portal by clicking on My Profile.\n If you want to change your registered address or name in your Zerodha account, you need to initiate a request offline. Please call us and we will guide you through the process. ", "source_id": "https://support.zerodha.com/category/your-zerodha-account/account-modification-and-segment-addition?language=english", "source_name": "Zerodha" }
+2025-03-21 18:42:05,773 - DEBUG    -  21 - <module>           - Embeddings loaded
+2025-03-21 18:42:05,933 - DEBUG    -  49 - <module>           - Zerodha retriever loaded.
+2025-03-21 18:43:36,497 - INFO     -  86 - rag_agent          - User-input: Hi
+2025-03-21 18:43:58,657 - INFO     -  92 - rag_agent          - Bot-response: Nice to meet you! I'm glad you're reaching out to Zerodha's support team. How can I assist you with your Zerodha-related query today? Are you looking for help with account opening, trading, or perhaps something else? Let me know, and I'll do my best to guide you through it!
+2025-03-21 18:44:31,130 - INFO     -  86 - rag_agent          - User-input: How can I contact zerodha?
+2025-03-21 18:44:38,764 - INFO     -  74 - retrieve_docs      - retriever docs: 2 for query: Contacting Zerodha
+2025-03-21 18:44:56,331 - INFO     -  92 - rag_agent          - Bot-response: You can contact Zerodha through their phone number: 080 47181888 or by reaching out to them through email by creating a ticket on their support website. If you're calling from an unregistered number, you'll be prompted to enter your registered mobile number followed by the support code.
+2025-03-21 22:31:11,178 - INFO     - 121 - generate_1         - User-input: My UPI transfer wasn't successful. What could be the reason?
+2025-03-21 22:31:12,182 - INFO     - 126 - generate_1         - retriever docs: 2 for query: My UPI transfer wasn't successful. What could be the reason?
+2025-03-21 22:31:43,391 - INFO     - 136 - generate_1         - Bot-response: Based on the provided documents, here are some possible reasons why your UPI transfer to Zerodha was not successful:
+
+1. **IDFC FIRST Bank's technical changes**: The document mentions that requests to convert a regular Zerodha account to a 3-in-1 account are on hold due to technical changes made by IDFC FIRST Bank.
+2. **PAN number update issue**: If the PAN number is not updated in the IDFC First Bank 3-in-1 account, it may cause an error while converting the account type.
+3. **Primary holder mismatch**: If the primary holder on the Zerodha account and the IDFC First Bank account differ, it may also cause an error during the conversion process.
+4. **Bank-related issues**: There might be issues with the bank's branch IFSC or account number that are causing problems with fund transfers.
+
+To resolve this issue, you can try the following:
+
+1. Check if your PAN number is updated in the IDFC First Bank 3-in-1 account and update it if necessary.
+2. Verify that the primary holder on both accounts matches to avoid any discrepancies.
+3. Reach out to IDFC FIRST Bank's customer support to inquire about the status of their technical changes and see if they can assist with resolving the issue.
+
+You can also create a ticket on Zerodha's support portal to get further assistance from their team.
+2025-03-21 22:34:11,108 - DEBUG    -  21 - <module>           - Embeddings loaded
+2025-03-21 22:34:11,286 - DEBUG    -  49 - <module>           - Zerodha retriever loaded.
+2025-03-21 22:34:18,366 - INFO     -  86 - rag_agent          - User-input: My UPI transfer wasn't successful. What could be the reason?
+2025-03-21 22:34:34,611 - INFO     -  74 - retrieve_docs      - retriever docs: 2 for query: UPI transfer failed reasons at Zerodha ['https://support.zerodha.com/category/your-zerodha-account/login-credentials/login-credentials-of-trading-platforms/articles/getting-an-invalid-totp-error', 'https://support.zerodha.com/category/account-opening/online-account-opening/idfc-3-in-1/articles/error-while-converting-account-to-idfc-first-3in1-account']
+2025-03-21 22:35:23,842 - INFO     -  92 - rag_agent          - Bot-response: I apologize for using unnecessary documentation previously.
+
+Since you mentioned your UPI transfer wasn't successful, let me provide some possible reasons:
+
+1\. **Invalid account details**: Ensure that the recipient’s bank account and IFSC code are correct. Double-check the account number, name, and IFSC code.
+
+2\.  \* **Insufficient balance**: Verify that there is sufficient balance in your Zerodha Bank Account for the UPI transfer.
+
+3\.  \* **Time-out**: If the transaction takes more than 30 minutes to complete, it might time out. Try resending the transaction or contact our support team for assistance.
+
+4\.  \*   \*\**Bank Network Issues\*\**: UPI transactions may fail if there are technical issues with your bank's systems or their integration with UPI. Wait for some time and try again later when network connectivity improves.
+
+To resolve this issue, you can try the above steps before attempting to reinitiate the transfer. If you're unsure about any of these possibilities or need further assistance, please feel free to ask!
+2025-03-21 22:37:05,491 - INFO     -  86 - rag_agent          - User-input: How can NRIs add money to their Zerodha account?
+2025-03-21 22:37:15,734 - INFO     -  74 - retrieve_docs      - retriever docs: 2 for query: adding funds to NRI Zerodha account ['https://support.zerodha.com/category/your-zerodha-account/nomination-process/articles/resident-individual-adding-nri-as-nominee', 'https://support.zerodha.com/category/funds/adding-funds']
+2025-03-21 22:38:50,003 - INFO     -  92 - rag_agent          - Bot-response: An NRI can add money to their Zerodha account by following these steps:
+
+1\. **UPI Transfer**: Fund transfer into your brokerage account directly from a bank using the Unified Payments Interface (UPI). If you're doing this for the first time, please ensure that UPI is linked in the Zerodha Console.
+
+2\.  \*   *Netbanking*: We offer a net banking option to fund your Zerodha account. You also need to link the bank account with our brokerage services before initiating the first transfer.\*\*
+
+3\.  \*    \*Bank Transfer (IMPS, NEFT)\*\*. Your money will be deposited from your regular savings or checking current account and reflected instantly in few minutes using IMPS or within 1-3 hours for NEFT.\
+Once you have completed a successful transaction to the Zerodha Bank Account via RTGS, it may take up to
+4\-6 hours\* for reflection as mentioned previously.\*
+
+4\.  \***UPI Auto Pay**: For the easiest fund transfer experience, we recommend enabling UPI AutoPay\*\*.
+
+5\.   *Cheque*: By depositing a cheque in our bank account or in our designated banking locations, you can add funds to your trading account. Please note that this method may take at least 6\-\-7 days.
+
+To know more about the above steps and also how to fund Zerodha using netbanking, read [this](https://support.zerodha.com/category/funds/adding-funds/how-to-add-funds-how-to-add-funds-to-the-zerodha-account-using-upi).
+
+Please refer to our funds section on this dashboard and Kite to know whether the methods mentioned above are allowed in your country.
+2025-03-22 00:23:06,627 - DEBUG    -  21 - <module>           - Embeddings loaded
+2025-03-22 00:23:06,789 - DEBUG    -  49 - <module>           - Zerodha retriever loaded.
+2025-03-22 00:23:48,457 - DEBUG    -  21 - <module>           - Embeddings loaded
+2025-03-22 00:23:48,607 - DEBUG    -  49 - <module>           - Zerodha retriever loaded.
+2025-03-22 00:24:01,891 - INFO     -  86 - rag_agent          - User-input: Hi my name is Vijay
+2025-03-22 00:24:28,400 - INFO     -  92 - rag_agent          - Bot-response: Hello Vijay! Welcome to Zerodha's support chat. How can I assist you with your Zerodha-related queries today? Do you have any questions about trading, accounts, or our platform in general?
+2025-03-22 00:24:48,835 - INFO     -  86 - rag_agent          - User-input: How can I open my account with zerodha?
+2025-03-22 00:24:57,205 - INFO     -  74 - retrieve_docs      - retriever docs: 2 for query: opening an account with Zerodha ['https://support.zerodha.com/category/account-opening/online-account-opening/minor-account/articles/open-minor-account-online', 'https://support.zerodha.com/category/account-opening/online-account-opening']
+2025-03-22 00:26:09,182 - INFO     -  92 - rag_agent          - Bot-response: I'll be happy to assist you with your questions regarding opening a Zerodha account. What specific query would you like me to address? Please let me know the type of account you want to open (e.g., trading, demat), and I can help you find relevant information from the provided text.
+
+For instance, if you're planning to open a demat or trading account with Zerodha, I can assist you in finding answers to questions like: "What are fees for opening an account at Zerodha?", "Can PAN and Aadhaar be collected via DigiLocker to complete KYC with Zerodha?", "Why did the account opening process stop stating that the IP address is outside India or not detected?"
+
+Alternatively, if you're interested in learning about minor accounts with Zerodha, I can provide information on: "What happens when a NRI-minor account holder completes 18 years of age?" or "How to open a minor account online at Zerodha?"
+
+Please let me know which area you'd like assistance with.
+2025-03-22 00:26:35,223 - DEBUG    -  21 - <module>           - Embeddings loaded
+2025-03-22 00:26:35,386 - DEBUG    -  49 - <module>           - Zerodha retriever loaded.
+2025-03-22 00:26:46,282 - INFO     -  97 - stream_rag_agent   - User-input: How to log in to the Zerodha Console
+2025-03-22 00:27:38,816 - DEBUG    -  21 - <module>           - Embeddings loaded
+2025-03-22 00:27:38,970 - DEBUG    -  49 - <module>           - Zerodha retriever loaded.
+2025-03-22 00:27:49,322 - INFO     -  97 - stream_rag_agent   - User-input: Hi
+2025-03-22 00:28:01,879 - INFO     -  74 - retrieve_docs      - retriever docs: 2 for query:  ['https://support.zerodha.com/category/console/profile', 'https://support.zerodha.com/category/console/reports']
+2025-03-22 00:28:51,225 - DEBUG    -  21 - <module>           - Embeddings loaded
+2025-03-22 00:28:51,386 - DEBUG    -  49 - <module>           - Zerodha retriever loaded.
+2025-03-22 00:28:59,158 - INFO     -  97 - stream_rag_agent   - User-input: Hi
+2025-03-22 00:29:06,266 - INFO     -  74 - retrieve_docs      - retriever docs: 2 for query:  ['https://support.zerodha.com/category/console/profile', 'https://support.zerodha.com/category/console/reports']
+2025-03-22 00:29:06,268 - INFO     - 112 - stream_rag_agent   - Bot-response: 
+2025-03-22 00:42:31,707 - DEBUG    -  21 - <module>           - Embeddings loaded
+2025-03-22 00:42:31,868 - DEBUG    -  49 - <module>           - Zerodha retriever loaded.
+2025-03-22 00:42:56,537 - INFO     -  74 - retrieve_docs      - retriever docs: 2 for query: open account online Zerodha ['https://support.zerodha.com/category/account-opening/online-account-opening/minor-account/articles/open-minor-account-online', 'https://support.zerodha.com/category/account-opening/online-account-opening/online-account-opening-process/articles/what-documents-do-i-need-to-open-an-account']
+2025-03-22 00:48:37,742 - DEBUG    -  21 - <module>           - Embeddings loaded
+2025-03-22 00:48:37,915 - DEBUG    -  49 - <module>           - Zerodha retriever loaded.
+2025-03-22 00:48:44,723 - INFO     -  86 - rag_agent          - User-input: How do I open an account online with Zerodha?
+2025-03-22 00:49:01,798 - INFO     -  74 - retrieve_docs      - retriever docs: 2 for query: opening account online at Zerodha ['https://support.zerodha.com/category/account-opening/online-account-opening/minor-account/articles/open-minor-account-online', 'https://support.zerodha.com/category/account-opening/online-account-opening/online-account-opening-process/articles/what-documents-do-i-need-to-open-an-account']
+2025-03-22 00:50:21,993 - INFO     -  92 - rag_agent          - Bot-response: To open an account online with Zerodha, follow these steps:
+
+1. Visit the signup page at [signup.zerodha.com](http://signup.zerodha.com) and log in using your existing Zerodha account credentials.
+2. Verify your profile details and click on "Continue."
+3. Enter your mobile number and email ID, and verify them using OTP.
+4. Enter your PAN and date of birth, and click on "Continue."
+5. On the DigiLocker page, enter your Aadhaar number and click on "Next."
+6. Enter the OTP received and submit.
+7. Enter your bank account details, select the terms and conditions checkbox, and click on "Continue."
+8. Proceed with In-person Verification (IPV). Both you and any nominees must be present during IPV.
+9. Upload required documents¹ and click on "Continue."
+10. Complete e-sign.
+
+You will receive an email with your user ID once your account is opened within 72 working hours.
+
+For the online process, you need the following documents:
+
+* PAN card
+* Aadhaar number
+* Bank proof (cancelled cheque, bank statement, or bank passbook)
+* Income proof (if required for F&O trading)
+
+If your mobile number is not linked with Aadhaar, follow the offline account opening process.
+
+The charge to open an equity trading and demat account online is ₹200.
+2025-03-22 00:51:27,584 - INFO     -  86 - rag_agent          - User-input: How do I open an account online with Zerodha?
+2025-03-22 00:51:49,175 - INFO     -  74 - retrieve_docs      - retriever docs: 2 for query: how to open online trading and demat account on zerodha ['https://support.zerodha.com/category/account-opening/offline-account-opening/individual-accounts/articles/can-i-open-a-joint-demat-account-at-zerodha', 'https://support.zerodha.com/category/account-opening/online-account-opening/minor-account/articles/open-minor-account-online']
+2025-03-22 00:53:21,427 - INFO     -  92 - rag_agent          - Bot-response: To open a minor account online at Zerodha, please follow these steps:
+
+1. Ensure that both the minor and the guardian have their Aadhaar linked to a mobile number.
+2. The guardian needs to have an existing Zerodha account.
+3. Visit `signup.zerodha.com/minor` and log in using the guardian's Zerodha account credentials.
+4. Verify the guardian profile details and click on `Continue`.
+5. Enter the mobile number and email ID, and verify them using OTP.
+6. Enter PAN and the date of birth of the minor, and click on `Continue`.
+7. On the DigiLocker page, enter the Aadhaar number of the minor and click on `Next`.
+8. Enter the OTP received and submit.
+9. Enter the bank account details of the minor, select the terms and conditions checkbox and click on `Continue`.
+10. Proceed to do In-person Verification (IPV). Both the minor and guardian must be present during the IPV.
+11. Upload the required documents and click on `Continue`.
+12. Add nominees (optional).
+13. eSign using the guardian's Aadhaar.
+
+Please note that if the minor's Aadhaar is not linked to a mobile number, or if the minor does not have an Aadhaar, the account must be opened offline.
+
+Also, as minors cannot buy stocks, the guardian can either transfer existing securities in their demat account or buy and transfer securities into the minor’s account using Zerodha’s gift feature.
+
+For more information on gifting, see `How to gift securities?`
+
+If you need any further assistance, please create a ticket here.
+2025-03-22 01:05:22,019 - DEBUG    -  21 - <module>           - Embeddings loaded
+2025-03-22 01:05:22,179 - DEBUG    -  49 - <module>           - Zerodha retriever loaded.
+2025-03-22 01:07:29,530 - INFO     -  74 - retrieve_docs      - retriever docs: 2 for query:  ['https://support.zerodha.com/category/console/profile', 'https://support.zerodha.com/category/console/reports']
+2025-03-22 01:07:49,611 - DEBUG    -  24 - <module>           - Embeddings loaded
+2025-03-22 01:07:49,772 - DEBUG    -  52 - <module>           - Zerodha retriever loaded.
+2025-03-22 01:09:41,855 - DEBUG    -  24 - <module>           - Embeddings loaded
+2025-03-22 01:09:42,019 - DEBUG    -  52 - <module>           - Zerodha retriever loaded.
+2025-03-22 01:11:37,928 - DEBUG    -  24 - <module>           - Embeddings loaded
+2025-03-22 01:11:38,091 - DEBUG    -  52 - <module>           - Zerodha retriever loaded.
+2025-03-22 01:17:36,424 - DEBUG    -  38 - <module>           - Embeddings loaded
+2025-03-22 01:17:36,758 - DEBUG    -  44 - <module>           - Zerodha retriever loaded.
+2025-03-22 01:18:35,444 - DEBUG    -  38 - <module>           - Embeddings loaded
+2025-03-22 01:18:35,779 - DEBUG    -  44 - <module>           - Zerodha retriever loaded.
+2025-03-22 01:18:43,348 - INFO     -  76 - stream_agent_response - User-input: Hi my name is Vijay
+2025-03-22 01:18:49,290 - INFO     -  66 - retrieve_docs      - retriever docs: 2 for query: Vijay ['https://support.zerodha.com/category/account-opening/online-account-opening/other-online-account-opening-related-queries/articles/find-name-as-per-pan', 'https://support.zerodha.com/category/your-zerodha-account/account-modification-and-segment-addition?language=english']
+2025-03-22 01:18:49,290 - INFO     -  86 - stream_agent_response - Bot-response: 
+2025-03-22 01:19:30,445 - DEBUG    -  38 - <module>           - Embeddings loaded
+2025-03-22 01:19:30,770 - DEBUG    -  44 - <module>           - Zerodha retriever loaded.
+2025-03-22 01:19:39,537 - INFO     -  76 - stream_agent_response - User-input: Hi
+2025-03-22 01:19:41,442 - INFO     -  66 - retrieve_docs      - retriever docs: 2 for query:  ['https://support.zerodha.com/category/console/profile', 'https://support.zerodha.com/category/console/reports']
+2025-03-22 01:22:03,797 - DEBUG    -  38 - <module>           - Embeddings loaded
+2025-03-22 01:22:04,136 - DEBUG    -  44 - <module>           - Zerodha retriever loaded.
+2025-03-22 01:22:55,798 - INFO     -  76 - stream_agent_response - User-input: Hi
+2025-03-22 01:22:58,661 - INFO     -  66 - retrieve_docs      - retriever docs: 2 for query:  ['https://support.zerodha.com/category/console/profile', 'https://support.zerodha.com/category/console/reports']
+2025-03-22 01:23:54,804 - DEBUG    -  38 - <module>           - Embeddings loaded
+2025-03-22 01:23:55,129 - DEBUG    -  44 - <module>           - Zerodha retriever loaded.
+2025-03-22 01:23:59,871 - INFO     -  76 - stream_agent_response - User-input: hi
+2025-03-22 01:26:34,239 - DEBUG    -  38 - <module>           - Embeddings loaded
+2025-03-22 01:26:34,600 - DEBUG    -  44 - <module>           - Zerodha retriever loaded.
+2025-03-22 01:27:23,695 - DEBUG    -  38 - <module>           - Embeddings loaded
+2025-03-22 01:27:24,022 - DEBUG    -  44 - <module>           - Zerodha retriever loaded.
+2025-03-22 01:27:32,839 - INFO     -  76 - stream_agent_response - User-input: Hi
+2025-03-22 01:27:35,962 - INFO     -  66 - retrieve_docs      - retriever docs: 2 for query:  ['https://support.zerodha.com/category/console/profile', 'https://support.zerodha.com/category/console/reports']
+2025-03-23 22:43:18,820 - DEBUG    -  38 - <module>           - Embeddings loaded
+2025-03-23 22:43:19,157 - DEBUG    -  44 - <module>           - Zerodha retriever loaded.
+2025-03-23 22:45:21,420 - DEBUG    -  38 - <module>           - Embeddings loaded
+2025-03-23 22:45:21,761 - DEBUG    -  44 - <module>           - Zerodha retriever loaded.
+2025-03-23 22:48:10,555 - DEBUG    -  38 - <module>           - Embeddings loaded
+2025-03-23 22:48:10,889 - DEBUG    -  44 - <module>           - Zerodha retriever loaded.
+2025-03-23 22:49:30,049 - DEBUG    -  38 - <module>           - Embeddings loaded
+2025-03-23 22:49:30,371 - DEBUG    -  44 - <module>           - Zerodha retriever loaded.
+2025-03-23 22:50:09,107 - DEBUG    -  38 - <module>           - Embeddings loaded
+2025-03-23 22:50:09,440 - DEBUG    -  44 - <module>           - Zerodha retriever loaded.
+2025-03-23 22:50:14,095 - INFO     -  75 - stream_agent_response - User-input: Hi
+2025-03-23 22:50:57,460 - DEBUG    -  38 - <module>           - Embeddings loaded
+2025-03-23 22:50:57,782 - DEBUG    -  44 - <module>           - Zerodha retriever loaded.
+2025-03-23 23:08:58,876 - INFO     -  75 - stream_agent_response - User-input: Hi
+2025-03-23 23:14:31,961 - DEBUG    -  38 - <module>           - Embeddings loaded
+2025-03-23 23:14:32,315 - DEBUG    -  44 - <module>           - Zerodha retriever loaded.
+2025-03-23 23:14:42,679 - INFO     -  75 - stream_agent_response - User-input: Hi
+2025-03-23 23:17:03,681 - DEBUG    -  38 - <module>           - Embeddings loaded
+2025-03-23 23:17:04,024 - DEBUG    -  44 - <module>           - Zerodha retriever loaded.
+2025-03-23 23:17:19,148 - INFO     -  75 - stream_agent_response - User-input: Hi

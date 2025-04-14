@@ -9,7 +9,8 @@ from pydantic_ai.models.openai import OpenAIModel
 from pydantic_ai.providers.openai import OpenAIProvider
 from utils import get_logger, zerodha_examples, text_generation
 
-llm_model = "llama3.2"
+# llm_model = "llama3.2"
+llm_model = "llama3.1"
 # llm_model = "llama3.2:3b-instruct-fp16"
 
 # Get logger opbject
@@ -55,37 +56,22 @@ ollama_llm = OpenAIModel(model_name=llm_model, provider=OpenAIProvider(base_url=
 
 from pydantic_ai.models.groq import GroqModel
 
-groq_llm = GroqModel('llama-3.3-70b-versatile')
-agent = Agent(groq_llm, system_prompt=system_prompt)
+# groq_llm = GroqModel('llama-3.3-70b-versatile')
+agent = Agent(ollama_llm, system_prompt=system_prompt)
 
 # Define a tool for document retrieval using your Chroma vector retriever
-@agent.tool
-def retrieve_docs(context: RunContext, query: str) -> str:
-    """
-    Retrieve documentation sections based on a search query.
+@agent.tool()
+async def retrieve_docs(context: RunContext, query: str) -> str:
+    """Retrieve documentation sections based on a search query.
     
-    When to Use:
-    - Use this tool for specific or detailed queries requiring precise information from Zerodha's knowledge base or documentation.
-    - Examples include questions about Zerodha's brokerage plans, trading platforms, account opening processes, or advanced troubleshooting.
+    Args:
+        context: The call context.
+        search_query: The search query.
 
-    Functionality:
-    - The tool uses a Chroma vector retriever to search the document database for the most relevant sections based on the provided query.
-    - It combines the retrieved documents into a single string for easy processing, including source metadata where available.
-
-    Arguments:
-    - `context`: The RunContext instance providing the execution context.
-    - `query`: A string representing the user's query to search for in the vector store.
-
-    Returns:
-    - A string containing the combined content of the retrieved documents, including source information. 
-    - If no documents are found, it returns an empty string.
-
-    Example Output:
-    - "Source: Help Center - Account Opening\nContent: To open an account with Zerodha, follow these steps..."
     """
     docs = retriever.invoke(query)
     # gr.Info(f"retriever docs: {len(docs)} for query: {query}")
-    logger.info(f"retriever docs: {len(docs)} for query: {query}")
+    logger.info(f"retriever docs: {len(docs)} for query: {query} {[doc.metadata['source'] for doc in docs]}")
     # Combine the retrieved documents into a single string, including source information if available
     result = "\n\n".join(
         f"Source: {doc.metadata.get('source', 'unknown')}\nContent: {doc.page_content}"
@@ -106,6 +92,18 @@ def rag_agent(query, history):
     logger.info(f"Bot-response: {resp.data}")
     return resp.data
 
+async def stream_rag_agent(query, history):
+    # global resp
+    # logger.info(f"User-input: {query}")
+    async with agent.run_stream(query, deps=retriever) as result:
+        output = ""
+        async for chunk in result.stream_text(delta=True):
+            output += chunk
+            yield output
+
+    # logger.info(f"Bot-response: {output}")
+    # return resp.get_data
+
 def construct_prompt(query, retrieved_docs):
     prompt = "query" + query
     
@@ -117,12 +115,13 @@ def construct_prompt(query, retrieved_docs):
     
     return prompt
 
-
 def generate_1(query, history):
     logger.info(f"User-input: {query}")
 
     # Retrieve relavant documents
     retrieved_docs = retriever.invoke(query)
+
+    logger.info(f"retriever docs: {len(retrieved_docs)} for query: {query}")
 
     formatted_prompt = construct_prompt(query, retrieved_docs)
 
@@ -142,11 +141,12 @@ ZerodhatRAG = gr.ChatInterface(
     stop_btn=True,
     examples=zerodha_examples
 )
-ZerodhatRAGAgent = gr.ChatInterface(
-    # fn=generate_1, 
+ZerodhatRAGAgent = gr.ChatInterface( 
     fn=rag_agent, 
+    # fn=stream_rag_agent, 
     type="messages",
     stop_btn=True,
+    save_history=True,
     examples=zerodha_examples
 )
 
