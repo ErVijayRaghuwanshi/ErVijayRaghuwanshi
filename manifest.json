@@ -50,5 +50,22 @@
             "sizes": "512x512",
             "type": "image/png"
         }
+    ],
+    "prefer_related_applications": false,
+    "related_applications": [],
+    "categories": ["portfolio", "professional", "technology"],
+    "screenshots": [
+        {
+            "src": "/ErVijayRaghuwanshi/assets/screenshots/desktop.png",
+            "sizes": "1280x800",
+            "type": "image/png",
+            "form_factor": "wide"
+        },
+        {
+            "src": "/ErVijayRaghuwanshi/assets/screenshots/mobile.png",
+            "sizes": "390x844",
+            "type": "image/png",
+            "form_factor": "narrow"
+        }
     ]
 }

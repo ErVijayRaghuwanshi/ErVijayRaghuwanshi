@@ -15,6 +15,10 @@ const urlsToCache = [
     'https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'
 ];
 
+// Add offline fallback
+const offlinePage = '/ErVijayRaghuwanshi/offline.html';
+urlsToCache.push(offlinePage);
+
 // Install Service Worker
 self.addEventListener('install', event => {
     event.waitUntil(
@@ -43,6 +47,15 @@ self.addEventListener('activate', event => {
 
 // Fetch Event
 self.addEventListener('fetch', event => {
+    if (event.request.mode === 'navigate') {
+        event.respondWith(
+            fetch(event.request).catch(() => {
+                return caches.match(offlinePage);
+            })
+        );
+        return;
+    }
+
     const url = new URL(event.request.url);
     if (url.origin === location.origin) {
         event.respondWith(
