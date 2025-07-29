@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#2563eb">
 </head>
 <body class="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300">
     <!-- Loading Screen -->
@@ -149,6 +151,7 @@
                         <span class="skill-badge"><i class="fas fa-bolt mr-1"></i>FastAPI</span>
                         <span class="skill-badge"><i class="fas fa-flask mr-1"></i>Flask</span>
                         <span class="skill-badge"><i class="fab fa-css3-alt mr-1"></i>TailwindCSS</span>
+                        <span class="skill-badge"><i class="fas fa-database mr-1"></i>PySpark</span>
                     </div>
                 </div>
                 <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
@@ -161,6 +164,8 @@
                         <span class="skill-badge"><i class="fab fa-aws mr-1"></i>AWS</span>
                         <span class="skill-badge"><i class="fas fa-server mr-1"></i>Jenkins</span>
                         <span class="skill-badge"><i class="fas fa-rabbit mr-1"></i>RabbitMQ</span>
+                        <span class="skill-badge"><i class="fas fa-hdd mr-1"></i>HDFS</span>
+                        <span class="skill-badge"><i class="fas fa-search mr-1"></i>Solr</span>
                     </div>
                 </div>
                 <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
@@ -173,6 +178,8 @@
                         <span class="skill-badge"><i class="fas fa-brain mr-1"></i>LLMs</span>
                         <span class="skill-badge"><i class="fas fa-link mr-1"></i>LangChain</span>
                         <span class="skill-badge"><i class="fas fa-shield-alt mr-1"></i>Cybersecurity</span>
+                        <span class="skill-badge"><i class="fas fa-stream mr-1"></i>Big Data Pipelines</span>
+                         <span class="skill-badge"><i class="fas fa-cogs mr-1"></i>N8N</span>
                     </div>
                 </div>
             </div>
@@ -197,9 +204,39 @@
                         <div class="education-item">
                             <div class="flex items-center mb-2">
                                 <i class="fas fa-graduation-cap text-blue-500 mr-2"></i>
-                                <h4 class="font-semibold">Bachelor's in Electrical and Electronics Engineering</h4>
+                                <h4 class="font-semibold">Bachelor of Technology (BTech), Electrical and Electronics Engineering</h4>
                             </div>
-                            <p class="text-gray-600 dark:text-gray-300">Strong foundation in software development</p>
+                            <p class="text-gray-600 dark:text-gray-300">
+                                Rajiv Gandhi Prodyogiki Vishwavidyalaya<br>
+                                Grade: First Division With Honours (7.59/10)<br>
+                                Aug 2018 - Jun 2021
+                            </p>
+                            <p class="text-sm text-gray-500 dark:text-gray-400">
+                                Activities: IoT voice assistant project, Solar MPPT major project, Gesture control in Computer Vision
+                            </p>
+                        </div>
+                        <div class="education-item">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-school text-blue-500 mr-2"></i>
+                                <h4 class="font-semibold">Diploma in Electrical Engineering</h4>
+                            </div>
+                            <p class="text-gray-600 dark:text-gray-300">
+                                Rajiv Gandhi Prodyogiki Vishwavidyalaya<br>
+                                Grade: 6.51/10<br>
+                                2013 - 2016
+                            </p>
+                        </div>
+                        <div class="education-item">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-book text-blue-500 mr-2"></i>
+                                <h4 class="font-semibold">Secondary School Certificate (SSC) / Matriculation</h4>
+                            </div>
+                            <p class="text-gray-600 dark:text-gray-300">
+                                Nutan Higher Secondary School, Sehore
+                            </p>
+                            <p class="text-sm text-gray-500 dark:text-gray-400">
+                                Grade: 70% | Year: 2016
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -311,23 +348,47 @@
     <footer class="bg-gray-800 text-white py-8">
         <div class="container mx-auto px-4 text-center">
             <div class="flex justify-center space-x-4 mb-4">
-                <a href="https://github.com/ErVijayRaghuwanshi" class="text-gray-400 hover:text-white transition">
-                    <i class="fab fa-github text-xl"></i>
+                <a href="https://github.com/ErVijayRaghuwanshi" class="text-gray-400 hover:text-white transition group">
+                    <i class="fab fa-github text-xl group-hover:animate-bounce"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/ervijayraghuwanshi/" class="text-gray-400 hover:text-white transition">
-                    <i class="fab fa-linkedin text-xl"></i>
+                <a href="https://www.linkedin.com/in/ervijayraghuwanshi/" class="text-gray-400 hover:text-white transition group">
+                    <i class="fab fa-linkedin text-xl group-hover:animate-bounce"></i>
                 </a>
-                <a href="https://wa.me/+919755491130" class="text-gray-400 hover:text-white transition">
-                    <i class="fab fa-whatsapp text-xl"></i>
+                <a href="https://wa.me/+919755491130" class="text-gray-400 hover:text-white transition group">
+                    <i class="fab fa-whatsapp text-xl group-hover:animate-bounce"></i>
                 </a>
-               
+                <a href="https://twitter.com/ErVijayR" class="text-gray-400 hover:text-white transition group">
+                    <i class="fab fa-twitter text-xl group-hover:animate-bounce"></i>
+                </a>
+                <a href="https://instagram.com/ervijayraghuwanshi" class="text-gray-400 hover:text-white transition group">
+                    <i class="fab fa-instagram text-xl group-hover:animate-bounce"></i>
+                </a>
+                <a href="mailto:ervijayraghuwanshi@gmail.com" class="text-gray-400 hover:text-white transition group">
+                    <i class="fas fa-envelope text-xl group-hover:animate-bounce"></i>
+                </a>
+                <a href="tel:+919755491130" class="text-gray-400 hover:text-white transition group">
+                    <i class="fas fa-phone text-xl group-hover:animate-bounce"></i>
+                </a>
             </div>
-            <p>&copy; 2024 Vijay Raghuwanshi. All rights reserved.</p>
+            <p>&copy; 2025 Vijay Raghuwanshi. All rights reserved.</p>
         </div>
     </footer>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="script.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./sw.js', {
+                    scope: '/ErVijayRaghuwanshi/'
+                }).then(registration => {
+                    console.log('ServiceWorker registration successful');
+                }).catch(err => {
+                    console.log('ServiceWorker registration failed: ', err);
+                });
+            });
+        }
+    </script>
 </body>
-</html> 
+</html>

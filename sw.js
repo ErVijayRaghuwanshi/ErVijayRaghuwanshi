@@ -1,12 +1,12 @@
-const CACHE_NAME = 'vr-portfolio-v1';
+const CACHE_NAME = 'vr-portfolio-v2';
 const urlsToCache = [
-    '/',
-    '/index.html',
-    '/styles.css',
-    '/script.js',
-    '/manifest.json',
-    '/assets/profile.jpeg',
-    '/assets/Vijay_Raghuwanshi_Resume.pdf',
+    '/ErVijayRaghuwanshi/',
+    '/ErVijayRaghuwanshi/index.html',
+    '/ErVijayRaghuwanshi/styles.css',
+    '/ErVijayRaghuwanshi/script.js',
+    '/ErVijayRaghuwanshi/manifest.json',
+    '/ErVijayRaghuwanshi/assets/profile.jpeg',
+    '/ErVijayRaghuwanshi/assets/Vijay_Raghuwanshi_Resume.pdf',
     'https://cdn.tailwindcss.com',
     'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css',
     'https://unpkg.com/aos@next/dist/aos.css',
@@ -43,27 +43,30 @@ self.addEventListener('activate', event => {
 
 // Fetch Event
 self.addEventListener('fetch', event => {
-    event.respondWith(
-        caches.match(event.request)
-            .then(response => {
-                // Return cached version or fetch new
-                return response || fetch(event.request)
-                    .then(response => {
-                        // Check if we received a valid response
-                        if (!response || response.status !== 200 || response.type !== 'basic') {
+    const url = new URL(event.request.url);
+    if (url.origin === location.origin) {
+        event.respondWith(
+            caches.match(event.request)
+                .then(response => {
+                    // Return cached version or fetch new
+                    return response || fetch(event.request)
+                        .then(response => {
+                            // Check if we received a valid response
+                            if (!response || response.status !== 200 || response.type !== 'basic') {
+                                return response;
+                            }
+
+                            // Clone the response
+                            const responseToCache = response.clone();
+
+                            caches.open(CACHE_NAME)
+                                .then(cache => {
+                                    cache.put(event.request, responseToCache);
+                                });
+
                             return response;
-                        }
-
-                        // Clone the response
-                        const responseToCache = response.clone();
-
-                        caches.open(CACHE_NAME)
-                            .then(cache => {
-                                cache.put(event.request, responseToCache);
-                            });
-
-                        return response;
-                    });
-            })
-    );
-}); 
+                        });
+                })
+        );
+    }
+});
