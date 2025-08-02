@@ -1,5 +1,6 @@
 const CACHE_NAME = "simple-pwa-cache-v1";
 const urlsToCache = [
+  "ErVijayRaghuwanshi/",
   "ErVijayRaghuwanshi/index.html", 
   "ErVijayRaghuwanshi/manifest.json", 
   "ErVijayRaghuwanshi/sw.js",
