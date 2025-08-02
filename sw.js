@@ -1,5 +1,10 @@
 const CACHE_NAME = "simple-pwa-cache-v1";
-const urlsToCache = ["index.html", "manifest.json", "script.js", "style.css"];
+const urlsToCache = [
+  "ErVijayRaghuwanshi/index.html", 
+  "ErVijayRaghuwanshi/manifest.json", 
+  "ErVijayRaghuwanshi/script.js", 
+  "ErVijayRaghuwanshi/style.css"
+];
 
 self.addEventListener("install", event => {
   event.waitUntil(
