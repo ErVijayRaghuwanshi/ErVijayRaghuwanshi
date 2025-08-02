@@ -1,394 +1,423 @@
 <!DOCTYPE html>
-<html lang="en" class="light">
+<html lang="en" class="dark">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vijay Raghuwanshi - Software Engineer</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="manifest" href="manifest.json">
-    <meta name="theme-color" content="#2563eb">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="icons/icon-192x192.png" />
+  <meta name="theme-color" content="#ffffff" />
+  <title>Vijay Raghuwanshi - Software Engineer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <meta name="theme-color" content="#2563eb">
 </head>
+
+
 <body class="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300">
-    <!-- Loading Screen -->
-    <div class="loading">
-        <div class="loading-content">
-            <div class="loading-logo">VR</div>
-        </div>
+  <!-- Loading Screen -->
+  <div class="loading">
+    <div class="loading-content">
+      <div class="loading-logo">VR</div>
     </div>
+  </div>
 
-    <!-- Particles Background -->
-    <div id="particles-js"></div>
+  <!-- Particles Background -->
+  <div id="particles-js"></div>
 
-    <!-- Navigation -->
-    <nav class="fixed w-full bg-white/80 dark:bg-gray-800/80 backdrop-blur-md shadow-md z-50 transition-colors duration-300">
-        <div class="container mx-auto px-4 py-3">
-            <div class="flex justify-between items-center">
-                <div class="flex items-center space-x-2">
-                    <div class="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center">
-                        <h1 class="text-white font-bold">VR</h1>
-                    </div>
-                    <span class="text-xl font-bold">Vijay Raghuwanshi</span>
-                </div>
-                <div class="flex items-center space-x-6">
-                    <div class="hidden md:flex space-x-6">
-                        <a href="#about" class="nav-link">
-                            <i class="fas fa-user-circle mr-2"></i>About
-                        </a>
-                        <a href="#skills" class="nav-link">
-                            <i class="fas fa-code mr-2"></i>Skills
-                        </a>
-                        <a href="#education" class="nav-link">
-                            <i class="fas fa-graduation-cap mr-2"></i>Education
-                        </a>
-                        <a href="#projects" class="nav-link">
-                            <i class="fas fa-project-diagram mr-2"></i>Projects
-                        </a>
-                        <a href="#contact" class="nav-link">
-                            <i class="fas fa-envelope mr-2"></i>Contact
-                        </a>
-                    </div>
-                    <button id="darkModeToggle" class="p-2 rounded-lg bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors">
-                        <i class="fas fa-moon dark:hidden"></i>
-                        <i class="fas fa-sun hidden dark:block"></i>
-                    </button>
-                </div>
-            </div>
+  <!-- Navigation -->
+  <nav
+    class="fixed w-full bg-white/80 dark:bg-gray-800/80 backdrop-blur-md shadow-md z-50 transition-colors duration-300">
+    <div class="container mx-auto px-4 py-3">
+      <div class="flex justify-between items-center">
+        <div class="flex items-center space-x-2">
+          <div
+            class="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center">
+            <h1 class="text-white font-bold">VR</h1>
+          </div>
+          <span class="text-xl font-bold">Vijay Raghuwanshi</span>
         </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="hero-section min-h-screen flex items-center justify-center relative overflow-hidden">
-        <div class="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-purple-500/10 dark:from-blue-900/20 dark:to-purple-900/20"></div>
-        <div class="container mx-auto px-4 relative z-10">
-            <div class="flex flex-col md:flex-row items-center justify-between gap-8">
-                <div class="text-left md:w-1/2">
-                    <div class="relative w-32 h-32 md:w-40 md:h-40 mx-auto md:mx-0 mb-8">
-                        <div class="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full animate-pulse"></div>
-                        <div class="absolute inset-2 bg-white dark:bg-gray-800 rounded-full flex items-center justify-center overflow-hidden">
-                            <img src="assets/profile.jpeg" alt="Vijay Raghuwanshi" class="w-full h-full object-cover rounded-full">
-                        </div>
-                        <div class="absolute -inset-4 border-4 border-blue-500/20 rounded-full animate-ping"></div>
-                    </div>
-                    <h1 class="text-5xl md:text-6xl font-bold mb-4 hero-text" data-aos="fade-up">Vijay Raghuwanshi</h1>
-                    <p class="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8" data-aos="fade-up" data-aos-delay="100">
-                        <span class="inline-block animate-bounce">👨‍💻</span> Software Engineer | 
-                        <span class="inline-block animate-bounce">🤖</span> GenAI Specialist | 
-                        <span class="inline-block animate-bounce">🛡️</span> Cybersecurity Expert
-                    </p>
-                    <div class="flex flex-wrap gap-4" data-aos="fade-up" data-aos-delay="200">
-                        <a href="https://github.com/ErVijayRaghuwanshi" class="btn-primary" target="_blank">
-                            <i class="fab fa-github mr-2"></i>GitHub
-                        </a>
-                        <a href="https://www.linkedin.com/in/ervijayraghuwanshi/" class="btn-primary" target="_blank">
-                            <i class="fab fa-linkedin mr-2"></i>LinkedIn
-                        </a>
-                        <a href="assets/Vijay_Raghuwanshi_Resume.pdf" class="btn-primary" target="_blank">
-                            <i class="fas fa-download mr-2"></i>Download Resume
-                        </a>
-                    </div>
-                </div>
-                <div class="md:w-1/2 flex justify-center">
-                    <div class="relative w-64 h-64 md:w-80 md:h-80">
-                        <div class="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full animate-pulse opacity-50"></div>
-                        <div class="absolute inset-4 bg-white dark:bg-gray-800 rounded-full flex items-center justify-center">
-                            <div class="text-center">
-                                <i class="fas fa-code text-6xl md:text-8xl text-blue-500 mb-4"></i>
-                                <p class="text-xl md:text-2xl font-semibold">4+ Years of Experience</p>
-                                <p class="text-gray-600 dark:text-gray-300">Building Innovative Solutions</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="mt-12 animate-bounce text-center">
-                <i class="fas fa-chevron-down text-2xl text-gray-400"></i>
-            </div>
+        <div class="flex items-center space-x-6">
+          <div class="hidden md:flex space-x-6">
+            <a href="#about" class="nav-link">
+              <i class="fas fa-user-circle mr-2"></i>About
+            </a>
+            <a href="#skills" class="nav-link">
+              <i class="fas fa-code mr-2"></i>Skills
+            </a>
+            <a href="#education" class="nav-link">
+              <i class="fas fa-graduation-cap mr-2"></i>Education
+            </a>
+            <a href="#projects" class="nav-link">
+              <i class="fas fa-project-diagram mr-2"></i>Projects
+            </a>
+            <a href="#contact" class="nav-link">
+              <i class="fas fa-envelope mr-2"></i>Contact
+            </a>
+          </div>
+          <button id="darkModeToggle"
+            class="p-2 rounded-lg bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors">
+            <i class="fas fa-moon dark:hidden"></i>
+            <i class="fas fa-sun hidden dark:block"></i>
+          </button>
         </div>
-    </section>
+      </div>
+    </div>
+  </nav>
 
-    <!-- About Section -->
-    <section id="about" class="py-20 bg-white dark:bg-gray-800 transition-colors duration-300 relative">
-        <div class="absolute inset-0 bg-grid-pattern opacity-5"></div>
-        <div class="container mx-auto px-4 relative">
-            <div class="flex items-center justify-center mb-12">
-                <i class="fas fa-user-circle text-4xl text-blue-500 mr-4"></i>
-                <h2 class="text-4xl font-bold" data-aos="fade-up">About Me</h2>
+  <!-- Hero Section -->
+  <section class="hero-section min-h-screen flex items-center justify-center relative overflow-hidden">
+    <div
+      class="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-purple-500/10 dark:from-blue-900/20 dark:to-purple-900/20">
+    </div>
+    <div class="container mx-auto px-4 relative z-10">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-8">
+        <div class="text-left md:w-1/2">
+          <div class="relative w-32 h-32 md:w-40 md:h-40 mx-auto md:mx-0 mb-8">
+            <div class="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full animate-pulse">
             </div>
-            <div class="max-w-3xl mx-auto">
-                <p class="text-lg mb-6" data-aos="fade-up" data-aos-delay="100">
-                    <i class="fas fa-code text-blue-500 mr-2"></i>
-                    I'm a passionate Software Engineer with 4+ years of experience in API design, cybersecurity, IoT, and building innovative GenAI applications. Currently working at ClearTrail Technologies, I focus on creating robust and scalable solutions.
-                </p>
-                <p class="text-lg" data-aos="fade-up" data-aos-delay="200">
-                    <i class="fas fa-microchip text-blue-500 mr-2"></i>
-                    With a strong foundation in Electrical and Electronics Engineering, I combine hardware knowledge with software expertise to develop comprehensive solutions.
-                </p>
+            <div
+              class="absolute inset-2 bg-white dark:bg-gray-800 rounded-full flex items-center justify-center overflow-hidden">
+              <img src="assets/profile.jpeg" alt="Vijay Raghuwanshi" class="w-full h-full object-cover rounded-full">
             </div>
+            <div class="absolute -inset-4 border-4 border-blue-500/20 rounded-full animate-ping"></div>
+          </div>
+          <h1 class="text-5xl md:text-6xl font-bold mb-4 hero-text" data-aos="fade-up">Vijay Raghuwanshi</h1>
+          <p class="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8" data-aos="fade-up" data-aos-delay="100">
+            <span class="inline-block animate-bounce">👨‍💻</span> Software Engineer |
+            <span class="inline-block animate-bounce">🤖</span> GenAI Specialist |
+            <span class="inline-block animate-bounce">🛡️</span> Cybersecurity Expert
+          </p>
+          <div class="flex flex-wrap gap-4" data-aos="fade-up" data-aos-delay="200">
+            <a href="https://github.com/ErVijayRaghuwanshi" class="btn-primary" target="_blank">
+              <i class="fab fa-github mr-2"></i>GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/ervijayraghuwanshi/" class="btn-primary" target="_blank">
+              <i class="fab fa-linkedin mr-2"></i>LinkedIn
+            </a>
+            <a href="assets/Vijay_Raghuwanshi_Resume.pdf" class="btn-primary" target="_blank">
+              <i class="fas fa-download mr-2"></i>Download Resume
+            </a>
+          </div>
         </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="py-20 relative">
-        <div class="absolute inset-0 bg-grid-pattern opacity-5"></div>
-        <div class="container mx-auto px-4 relative">
-            <div class="flex items-center justify-center mb-12">
-                <i class="fas fa-code text-4xl text-blue-500 mr-4"></i>
-                <h2 class="text-4xl font-bold" data-aos="fade-up">Technical Skills</h2>
+        <div class="md:w-1/2 flex justify-center">
+          <div class="relative w-64 h-64 md:w-80 md:h-80">
+            <div
+              class="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full animate-pulse opacity-50">
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="flex items-center mb-4">
-                        <i class="fas fa-code text-2xl text-blue-500 mr-3"></i>
-                        <h3 class="text-xl font-semibold">Languages & Frameworks</h3>
-                    </div>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="skill-badge"><i class="fab fa-python mr-1"></i>Python</span>
-                        <span class="skill-badge"><i class="fab fa-js mr-1"></i>JavaScript</span>
-                        <span class="skill-badge"><i class="fas fa-bolt mr-1"></i>FastAPI</span>
-                        <span class="skill-badge"><i class="fas fa-flask mr-1"></i>Flask</span>
-                        <span class="skill-badge"><i class="fab fa-css3-alt mr-1"></i>TailwindCSS</span>
-                        <span class="skill-badge"><i class="fas fa-database mr-1"></i>PySpark</span>
-                    </div>
-                </div>
-                <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="flex items-center mb-4">
-                        <i class="fas fa-tools text-2xl text-blue-500 mr-3"></i>
-                        <h3 class="text-xl font-semibold">Tools & Platforms</h3>
-                    </div>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="skill-badge"><i class="fab fa-docker mr-1"></i>Docker</span>
-                        <span class="skill-badge"><i class="fab fa-aws mr-1"></i>AWS</span>
-                        <span class="skill-badge"><i class="fas fa-server mr-1"></i>Jenkins</span>
-                        <span class="skill-badge"><i class="fas fa-rabbit mr-1"></i>RabbitMQ</span>
-                        <span class="skill-badge"><i class="fas fa-hdd mr-1"></i>HDFS</span>
-                        <span class="skill-badge"><i class="fas fa-search mr-1"></i>Solr</span>
-                    </div>
-                </div>
-                <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="flex items-center mb-4">
-                        <i class="fas fa-star text-2xl text-blue-500 mr-3"></i>
-                        <h3 class="text-xl font-semibold">Specialized Skills</h3>
-                    </div>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="skill-badge"><i class="fas fa-robot mr-1"></i>GenAI</span>
-                        <span class="skill-badge"><i class="fas fa-brain mr-1"></i>LLMs</span>
-                        <span class="skill-badge"><i class="fas fa-link mr-1"></i>LangChain</span>
-                        <span class="skill-badge"><i class="fas fa-shield-alt mr-1"></i>Cybersecurity</span>
-                        <span class="skill-badge"><i class="fas fa-stream mr-1"></i>Big Data Pipelines</span>
-                         <span class="skill-badge"><i class="fas fa-cogs mr-1"></i>N8N</span>
-                    </div>
-                </div>
+            <div class="absolute inset-4 bg-white dark:bg-gray-800 rounded-full flex items-center justify-center">
+              <div class="text-center">
+                <i class="fas fa-code text-6xl md:text-8xl text-blue-500 mb-4"></i>
+                <p class="text-xl md:text-2xl font-semibold">4+ Years of Experience</p>
+                <p class="text-gray-600 dark:text-gray-300">Building Innovative Solutions</p>
+              </div>
             </div>
+          </div>
         </div>
-    </section>
+      </div>
+      <div class="mt-12 animate-bounce text-center">
+        <i class="fas fa-chevron-down text-2xl text-gray-400"></i>
+      </div>
+    </div>
+  </section>
 
-    <!-- Education Section -->
-    <section id="education" class="py-20 bg-white dark:bg-gray-800 transition-colors duration-300 relative">
-        <div class="absolute inset-0 bg-grid-pattern opacity-5"></div>
-        <div class="container mx-auto px-4 relative">
-            <div class="flex items-center justify-center mb-12">
-                <i class="fas fa-graduation-cap text-4xl text-blue-500 mr-4"></i>
-                <h2 class="text-4xl font-bold" data-aos="fade-up">Education & Certifications</h2>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="education-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="flex items-center mb-6">
-                        <i class="fas fa-university text-2xl text-blue-500 mr-3"></i>
-                        <h3 class="text-xl font-semibold">Education</h3>
-                    </div>
-                    <div class="space-y-4">
-                        <div class="education-item">
-                            <div class="flex items-center mb-2">
-                                <i class="fas fa-graduation-cap text-blue-500 mr-2"></i>
-                                <h4 class="font-semibold">Bachelor of Technology (BTech), Electrical and Electronics Engineering</h4>
-                            </div>
-                            <p class="text-gray-600 dark:text-gray-300">
-                                Rajiv Gandhi Prodyogiki Vishwavidyalaya<br>
-                                Grade: First Division With Honours (7.59/10)<br>
-                                Aug 2018 - Jun 2021
-                            </p>
-                            <p class="text-sm text-gray-500 dark:text-gray-400">
-                                Activities: IoT voice assistant project, Solar MPPT major project, Gesture control in Computer Vision
-                            </p>
-                        </div>
-                        <div class="education-item">
-                            <div class="flex items-center mb-2">
-                                <i class="fas fa-school text-blue-500 mr-2"></i>
-                                <h4 class="font-semibold">Diploma in Electrical Engineering</h4>
-                            </div>
-                            <p class="text-gray-600 dark:text-gray-300">
-                                Rajiv Gandhi Prodyogiki Vishwavidyalaya<br>
-                                Grade: 6.51/10<br>
-                                2013 - 2016
-                            </p>
-                        </div>
-                        <div class="education-item">
-                            <div class="flex items-center mb-2">
-                                <i class="fas fa-book text-blue-500 mr-2"></i>
-                                <h4 class="font-semibold">Secondary School Certificate (SSC) / Matriculation</h4>
-                            </div>
-                            <p class="text-gray-600 dark:text-gray-300">
-                                Nutan Higher Secondary School, Sehore
-                            </p>
-                            <p class="text-sm text-gray-500 dark:text-gray-400">
-                                Grade: 70% | Year: 2016
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="education-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="flex items-center mb-6">
-                        <i class="fas fa-certificate text-2xl text-blue-500 mr-3"></i>
-                        <h3 class="text-xl font-semibold">Certifications</h3>
-                    </div>
-                    <div class="space-y-4">
-                        <div class="certification-item">
-                            <div class="flex items-center mb-2">
-                                <i class="fab fa-python text-blue-500 mr-2"></i>
-                                <h4 class="font-semibold">Python 3 Programming Advanced</h4>
-                            </div>
-                            <p class="text-gray-600 dark:text-gray-300">Udemy</p>
-                        </div>
-                        <div class="certification-item">
-                            <div class="flex items-center mb-2">
-                                <i class="fas fa-chart-line text-blue-500 mr-2"></i>
-                                <h4 class="font-semibold">Exploratory Data Analysis with Python and Pandas</h4>
-                            </div>
-                            <p class="text-gray-600 dark:text-gray-300">Coursera</p>
-                        </div>
-                        <div class="certification-item">
-                            <div class="flex items-center mb-2">
-                                <i class="fas fa-network-wired text-blue-500 mr-2"></i>
-                                <h4 class="font-semibold">The Bits and Bytes of Computer Networking</h4>
-                            </div>
-                            <p class="text-gray-600 dark:text-gray-300">Coursera</p>
-                        </div>
-                        <div class="certification-item">
-                            <div class="flex items-center mb-2">
-                                <i class="fas fa-microchip text-blue-500 mr-2"></i>
-                                <h4 class="font-semibold">Internet of Things and Embedded Systems</h4>
-                            </div>
-                            <p class="text-gray-600 dark:text-gray-300">Coursera</p>
-                        </div>
-                        <div class="certification-item">
-                            <div class="flex items-center mb-2">
-                                <i class="fas fa-server text-blue-500 mr-2"></i>
-                                <h4 class="font-semibold">DevOps Beginners to Advanced with Projects</h4>
-                            </div>
-                            <p class="text-gray-600 dark:text-gray-300">Udemy</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-white dark:bg-gray-800 transition-colors duration-300 relative">
+    <div class="absolute inset-0 bg-grid-pattern opacity-5"></div>
+    <div class="container mx-auto px-4 relative">
+      <div class="flex items-center justify-center mb-12">
+        <i class="fas fa-user-circle text-4xl text-blue-500 mr-4"></i>
+        <h2 class="text-4xl font-bold" data-aos="fade-up">About Me</h2>
+      </div>
+      <div class="max-w-3xl mx-auto">
+        <p class="text-lg mb-6" data-aos="fade-up" data-aos-delay="100">
+          <i class="fas fa-code text-blue-500 mr-2"></i>
+          I'm a passionate Software Engineer with 4+ years of experience in API design, cybersecurity, IoT,
+          and building innovative GenAI applications. Currently working at ClearTrail Technologies, I focus on
+          creating robust and scalable solutions.
+        </p>
+        <p class="text-lg" data-aos="fade-up" data-aos-delay="200">
+          <i class="fas fa-microchip text-blue-500 mr-2"></i>
+          With a strong foundation in Electrical and Electronics Engineering, I combine hardware knowledge
+          with software expertise to develop comprehensive solutions.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-20 relative">
+    <div class="absolute inset-0 bg-grid-pattern opacity-5"></div>
+    <div class="container mx-auto px-4 relative">
+      <div class="flex items-center justify-center mb-12">
+        <i class="fas fa-code text-4xl text-blue-500 mr-4"></i>
+        <h2 class="text-4xl font-bold" data-aos="fade-up">Technical Skills</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="flex items-center mb-4">
+            <i class="fas fa-code text-2xl text-blue-500 mr-3"></i>
+            <h3 class="text-xl font-semibold">Languages & Frameworks</h3>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="skill-badge"><i class="fab fa-python mr-1"></i>Python</span>
+            <span class="skill-badge"><i class="fab fa-java mr-1"></i>Java</span>
+            <span class="skill-badge"><i class="fab fa-js mr-1"></i>JavaScript</span>
+            <span class="skill-badge"><i class="fas fa-bolt mr-1"></i>FastAPI</span>
+            <span class="skill-badge"><i class="fab fa-python mr-1"></i>SQLAlchemy</span>
+            <span class="skill-badge"><i class="fas fa-flask mr-1"></i>Flask</span>
+            <span class="skill-badge"><i class="fab fa-css3-alt mr-1"></i>TailwindCSS</span>
+            <span class="skill-badge"><i class="fas fa-database mr-1"></i>PySpark</span>
+          </div>
         </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="py-20 relative">
-        <div class="absolute inset-0 bg-grid-pattern opacity-5"></div>
-        <div class="container mx-auto px-4 relative">
-            <div class="flex items-center justify-center mb-12">
-                <i class="fas fa-project-diagram text-4xl text-blue-500 mr-4"></i>
-                <h2 class="text-4xl font-bold" data-aos="fade-up">Featured Projects</h2>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="flex items-center mb-4">
-                        <i class="fas fa-images text-2xl text-blue-500 mr-3"></i>
-                        <h3 class="text-xl font-semibold">Prompt Gallery</h3>
-                    </div>
-                    <p class="text-gray-600 dark:text-gray-300 mb-4">Interactive image search interface with 5,000+ AI-generated images</p>
-                    <a href="https://ervijayraghuwanshi.github.io/prompt-gallery" class="text-blue-600 dark:text-blue-400 hover:underline inline-flex items-center">
-                        View Project <i class="fas fa-arrow-right ml-2"></i>
-                    </a>
-                </div>
-                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="flex items-center mb-4">
-                        <i class="fas fa-robot text-2xl text-blue-500 mr-3"></i>
-                        <h3 class="text-xl font-semibold">Zerodha Support RAG Chatbot</h3>
-                    </div>
-                    <p class="text-gray-600 dark:text-gray-300 mb-4">Intelligent chatbot powered by RAG and vector databases</p>
-                    <a href="http://122.175.194.99:55000/" class="text-blue-600 dark:text-blue-400 hover:underline inline-flex items-center">
-                        View Project <i class="fas fa-arrow-right ml-2"></i>
-                    </a>
-                </div>
-                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="flex items-center mb-4">
-                        <i class="fas fa-shield-alt text-2xl text-blue-500 mr-3"></i>
-                        <h3 class="text-xl font-semibold">LightSabre on Laptop</h3>
-                    </div>
-                    <p class="text-gray-600 dark:text-gray-300 mb-4">Ultra-portable network traffic monitoring solution (Ideathon 2024 Award)</p>
-                </div>
-            </div>
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="flex items-center mb-4">
+            <i class="fas fa-tools text-2xl text-blue-500 mr-3"></i>
+            <h3 class="text-xl font-semibold">Tools & Platforms</h3>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="skill-badge"><i class="fab fa-linux mr-1"></i>Linux</span>
+            <span class="skill-badge"><i class="fab fa-docker mr-1"></i>Docker</span>
+            <span class="skill-badge"><i class="fab fa-aws mr-1"></i>AWS</span>
+            <span class="skill-badge"><i class="fab fa-vagrant mr-1"></i>Vagrant</span>
+            <span class="skill-badge"><i class="fab fa-gitlab mr-1"></i>CI-CD</span>
+            <span class="skill-badge"><i class="fas fa-server mr-1"></i>Jenkins</span>
+            <span class="skill-badge"><i class="fas fa-rabbit mr-1"></i>RabbitMQ</span>
+            <span class="skill-badge"><i class="fas fa-cloud mr-1"></i>Airflow</span>
+            <span class="skill-badge"><i class="fas fa-kafka mr-1"></i>Kafka</span>
+            <span class="skill-badge"><i class="fas fa-hdd mr-1"></i>HDFS</span>
+            <span class="skill-badge"><i class="fas fa-search mr-1"></i>Solr</span>
+          </div>
         </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 relative">
-        <div class="absolute inset-0 bg-grid-pattern opacity-5"></div>
-        <div class="container mx-auto px-4 relative">
-            <div class="flex items-center justify-center mb-12">
-                <i class="fas fa-envelope text-4xl text-blue-500 mr-4"></i>
-                <h2 class="text-4xl font-bold" data-aos="fade-up">Get in Touch</h2>
-            </div>
-            <div class="max-w-xl mx-auto text-center">
-                <p class="mb-8 text-lg" data-aos="fade-up" data-aos-delay="100">
-                    I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
-                </p>
-                
-            </div>
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="flex items-center mb-4">
+            <i class="fas fa-star text-2xl text-blue-500 mr-3"></i>
+            <h3 class="text-xl font-semibold">Specialized Skills</h3>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="skill-badge"><i class="fas fa-robot mr-1"></i>GenAI</span>
+            <span class="skill-badge"><i class="fab fa-python mr-1"></i>pydantic-ai</span>
+            <span class="skill-badge"><i class="fas fa-brain mr-1"></i>LLMs</span>
+            <span class="skill-badge"><i class="fas fa-link mr-1"></i>LangChain</span>
+            <span class="skill-badge"><i class="fas fa-shield-alt mr-1"></i>Cybersecurity</span>
+            <span class="skill-badge"><i class="fas fa-stream mr-1"></i>Big Data Pipelines</span>
+            <span class="skill-badge"><i class="fas fa-cogs mr-1"></i>N8N</span>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-8">
-        <div class="container mx-auto px-4 text-center">
-            <div class="flex justify-center space-x-4 mb-4">
-                <a href="https://github.com/ErVijayRaghuwanshi" class="text-gray-400 hover:text-white transition group">
-                    <i class="fab fa-github text-xl group-hover:animate-bounce"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/ervijayraghuwanshi/" class="text-gray-400 hover:text-white transition group">
-                    <i class="fab fa-linkedin text-xl group-hover:animate-bounce"></i>
-                </a>
-                <a href="https://wa.me/+919755491130" class="text-gray-400 hover:text-white transition group">
-                    <i class="fab fa-whatsapp text-xl group-hover:animate-bounce"></i>
-                </a>
-                <a href="https://x.com/ErVijayRaghu1c" class="text-gray-400 hover:text-white transition group">
-                    <i class="fab fa-x text-xl group-hover:animate-bounce"></i>
-                </a>
-                <a href="https://instagram.com/er.vijayraghuwanshi" class="text-gray-400 hover:text-white transition group">
-                    <i class="fab fa-instagram text-xl group-hover:animate-bounce"></i>
-                </a>
-                <a href="mailto:ervijayraghuwanshi@gmail.com" class="text-gray-400 hover:text-white transition group">
-                    <i class="fas fa-envelope text-xl group-hover:animate-bounce"></i>
-                </a>
-                <a href="tel:+919755491130" class="text-gray-400 hover:text-white transition group">
-                    <i class="fas fa-phone text-xl group-hover:animate-bounce"></i>
-                </a>
+  <!-- Education Section -->
+  <section id="education" class="py-20 bg-white dark:bg-gray-800 transition-colors duration-300 relative">
+    <div class="absolute inset-0 bg-grid-pattern opacity-5"></div>
+    <div class="container mx-auto px-4 relative">
+      <div class="flex items-center justify-center mb-12">
+        <i class="fas fa-graduation-cap text-4xl text-blue-500 mr-4"></i>
+        <h2 class="text-4xl font-bold" data-aos="fade-up">Education & Certifications</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="education-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="flex items-center mb-6">
+            <i class="fas fa-university text-2xl text-blue-500 mr-3"></i>
+            <h3 class="text-xl font-semibold">Education</h3>
+          </div>
+          <div class="space-y-4">
+            <div class="education-item">
+              <div class="flex items-center mb-2">
+                <i class="fas fa-graduation-cap text-blue-500 mr-2"></i>
+                <h4 class="font-semibold">Bachelor of Technology (BTech), Electrical and Electronics
+                  Engineering</h4>
+              </div>
+              <p class="text-gray-600 dark:text-gray-300">
+                Rajiv Gandhi Prodyogiki Vishwavidyalaya<br>
+                Grade: First Division With Honours (7.59/10)<br>
+                Aug 2018 - Jun 2021
+              </p>
+              <p class="text-sm text-gray-500 dark:text-gray-400">
+                Activities: IoT voice assistant project, Solar MPPT major project, Gesture control in
+                Computer Vision
+              </p>
             </div>
-            <p>&copy; 2025 Vijay Raghuwanshi. All rights reserved.</p>
+            <div class="education-item">
+              <div class="flex items-center mb-2">
+                <i class="fas fa-school text-blue-500 mr-2"></i>
+                <h4 class="font-semibold">Diploma in Electrical Engineering</h4>
+              </div>
+              <p class="text-gray-600 dark:text-gray-300">
+                Rajiv Gandhi Prodyogiki Vishwavidyalaya<br>
+                Grade: 6.51/10<br>
+                2013 - 2016
+              </p>
+            </div>
+            <div class="education-item">
+              <div class="flex items-center mb-2">
+                <i class="fas fa-book text-blue-500 mr-2"></i>
+                <h4 class="font-semibold">Secondary School Certificate (SSC) / Matriculation</h4>
+              </div>
+              <p class="text-gray-600 dark:text-gray-300">
+                Nutan Higher Secondary School, Sehore
+              </p>
+              <p class="text-sm text-gray-500 dark:text-gray-400">
+                Grade: 70% | Year: 2016
+              </p>
+            </div>
+          </div>
         </div>
-    </footer>
+        <div class="education-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="flex items-center mb-6">
+            <i class="fas fa-certificate text-2xl text-blue-500 mr-3"></i>
+            <h3 class="text-xl font-semibold">Certifications</h3>
+          </div>
+          <div class="space-y-4">
+            <div class="certification-item">
+              <div class="flex items-center mb-2">
+                <i class="fab fa-python text-blue-500 mr-2"></i>
+                <h4 class="font-semibold">Python 3 Programming Advanced</h4>
+              </div>
+              <p class="text-gray-600 dark:text-gray-300">Udemy</p>
+            </div>
+            <div class="certification-item">
+              <div class="flex items-center mb-2">
+                <i class="fas fa-chart-line text-blue-500 mr-2"></i>
+                <h4 class="font-semibold">Exploratory Data Analysis with Python and Pandas</h4>
+              </div>
+              <p class="text-gray-600 dark:text-gray-300">Coursera</p>
+            </div>
+            <div class="certification-item">
+              <div class="flex items-center mb-2">
+                <i class="fas fa-network-wired text-blue-500 mr-2"></i>
+                <h4 class="font-semibold">The Bits and Bytes of Computer Networking</h4>
+              </div>
+              <p class="text-gray-600 dark:text-gray-300">Coursera</p>
+            </div>
+            <div class="certification-item">
+              <div class="flex items-center mb-2">
+                <i class="fas fa-microchip text-blue-500 mr-2"></i>
+                <h4 class="font-semibold">Internet of Things and Embedded Systems</h4>
+              </div>
+              <p class="text-gray-600 dark:text-gray-300">Coursera</p>
+            </div>
+            <div class="certification-item">
+              <div class="flex items-center mb-2">
+                <i class="fas fa-server text-blue-500 mr-2"></i>
+                <h4 class="font-semibold">DevOps Beginners to Advanced with Projects</h4>
+              </div>
+              <p class="text-gray-600 dark:text-gray-300">Udemy</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="script.js"></script>
-    <script>
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('./sw.js', {
-                    scope: '/ErVijayRaghuwanshi/'
-                }).then(registration => {
-                    console.log('ServiceWorker registration successful');
-                }).catch(err => {
-                    console.log('ServiceWorker registration failed: ', err);
-                });
-            });
-        }
-    </script>
+  <!-- Projects Section -->
+  <section id="projects" class="py-20 relative">
+    <div class="absolute inset-0 bg-grid-pattern opacity-5"></div>
+    <div class="container mx-auto px-4 relative">
+      <div class="flex items-center justify-center mb-12">
+        <i class="fas fa-project-diagram text-4xl text-blue-500 mr-4"></i>
+        <h2 class="text-4xl font-bold" data-aos="fade-up">Featured Projects</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="flex items-center mb-4">
+            <i class="fas fa-images text-2xl text-blue-500 mr-3"></i>
+            <h3 class="text-xl font-semibold">Prompt Gallery</h3>
+          </div>
+          <p class="text-gray-600 dark:text-gray-300 mb-4">Interactive image search interface with 5,000+
+            AI-generated images</p>
+          <a href="https://ervijayraghuwanshi.github.io/prompt-gallery"
+            class="text-blue-600 dark:text-blue-400 hover:underline inline-flex items-center">
+            View Project <i class="fas fa-arrow-right ml-2"></i>
+          </a>
+        </div>
+        <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="flex items-center mb-4">
+            <i class="fas fa-robot text-2xl text-blue-500 mr-3"></i>
+            <h3 class="text-xl font-semibold">Zerodha Support RAG Chatbot</h3>
+          </div>
+          <p class="text-gray-600 dark:text-gray-300 mb-4">Intelligent chatbot powered by RAG and vector
+            databases</p>
+          <a href="http://122.175.194.99:55000/"
+            class="text-blue-600 dark:text-blue-400 hover:underline inline-flex items-center">
+            View Project <i class="fas fa-arrow-right ml-2"></i>
+          </a>
+        </div>
+        <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="flex items-center mb-4">
+            <i class="fas fa-shield-alt text-2xl text-blue-500 mr-3"></i>
+            <h3 class="text-xl font-semibold">LightSabre on Laptop</h3>
+          </div>
+          <p class="text-gray-600 dark:text-gray-300 mb-4">Ultra-portable network traffic monitoring solution
+            (Ideathon 2024 Award)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 relative">
+    <div class="absolute inset-0 bg-grid-pattern opacity-5"></div>
+    <div class="container mx-auto px-4 relative">
+      <div class="flex items-center justify-center mb-12">
+        <i class="fas fa-envelope text-4xl text-blue-500 mr-4"></i>
+        <h2 class="text-4xl font-bold" data-aos="fade-up">Get in Touch</h2>
+      </div>
+      <div class="max-w-xl mx-auto text-center">
+        <p class="mb-8 text-lg" data-aos="fade-up" data-aos-delay="100">
+          I'm always open to discussing new projects, creative ideas, or opportunities to be part of your
+          visions.
+        </p>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-8">
+    <div class="container mx-auto px-4 text-center">
+      <div class="flex justify-center space-x-4 mb-4">
+        <a href="https://github.com/ErVijayRaghuwanshi" class="text-gray-400 hover:text-white transition group">
+          <i class="fab fa-github text-xl group-hover:animate-bounce"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/ervijayraghuwanshi/"
+          class="text-gray-400 hover:text-white transition group">
+          <i class="fab fa-linkedin text-xl group-hover:animate-bounce"></i>
+        </a>
+        <a href="https://wa.me/+919755491130" class="text-gray-400 hover:text-white transition group">
+          <i class="fab fa-whatsapp text-xl group-hover:animate-bounce"></i>
+        </a>
+        <a href="https://x.com/ErVijayRaghu1c" class="text-gray-400 hover:text-white transition group">
+          <i class="fab fa-x text-xl group-hover:animate-bounce"></i>
+        </a>
+        <a href="https://instagram.com/er.vijayraghuwanshi" class="text-gray-400 hover:text-white transition group">
+          <i class="fab fa-instagram text-xl group-hover:animate-bounce"></i>
+        </a>
+        <a href="mailto:ervijayraghuwanshi@gmail.com" class="text-gray-400 hover:text-white transition group">
+          <i class="fas fa-envelope text-xl group-hover:animate-bounce"></i>
+        </a>
+        <a href="tel:+919755491130" class="text-gray-400 hover:text-white transition group">
+          <i class="fas fa-phone text-xl group-hover:animate-bounce"></i>
+        </a>
+      </div>
+      <p>&copy; 2025 Vijay Raghuwanshi. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="script.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js')
+        .then(reg => console.log('Service Worker Registered!', reg))
+        .catch(err => console.log('Service Worker Registration Failed:', err));
+    }
+  </script>
 </body>
+
 </html>

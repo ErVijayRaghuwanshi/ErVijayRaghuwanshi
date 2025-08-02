@@ -1,3 +1,5 @@
+
+
 // Initialize AOS (Animate On Scroll)
 AOS.init({
     duration: 800,
@@ -140,7 +142,7 @@ window.addEventListener('scroll', () => {
     });
 
     navLinks.forEach(link => {
-        link.classList.remove('text-blue-600', 'dark:text-blue-400');
+        link.classList.remove('text-blue-600', 'dark:text-blue-400', );
         if (link.getAttribute('href').slice(1) === current) {
             link.classList.add('text-blue-600', 'dark:text-blue-400');
         }
@@ -305,11 +307,11 @@ function updateParticlesColor() {
     });
 }
 
-// Theme toggle event listener
-document.getElementById('themeToggle').addEventListener('click', () => {
-    currentThemeIndex = (currentThemeIndex + 1) % themes.length;
-    setTheme(themes[currentThemeIndex]);
-});
+// // Theme toggle event listener
+// document.getElementById('themeToggle').addEventListener('click', () => {
+//     currentThemeIndex = (currentThemeIndex + 1) % themes.length;
+//     setTheme(themes[currentThemeIndex]);
+// });
 
 // Load saved theme preference
 const savedTheme = localStorage.getItem('theme');

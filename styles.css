@@ -52,6 +52,30 @@ html {
     color: var(--primary-color);
 }
 
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: var(--primary-color);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+.nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.nav-link:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-color: var(--primary-color);
+}
+
 /* Button Styles */
 .btn-primary {
     display: inline-flex;
@@ -491,4 +515,4 @@ html {
 
 .experience-circle {
     animation: rotate 20s linear infinite;
-} 
+}
