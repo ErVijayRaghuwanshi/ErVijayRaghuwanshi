@@ -523,3 +523,29 @@ html {
 .experience-circle {
     animation: rotate 20s linear infinite;
 }
+
+
+
+/* Social hover effects */
+footer a:hover i.fab.fa-github { color: #fff; }
+footer a:hover i.fab.fa-linkedin { color: #0A66C2; }
+footer a:hover i.fab.fa-whatsapp { color: #25D366; }
+footer a:hover i.fab.fa-x { color: #000; }
+footer a:hover i.fab.fa-instagram {
+  background: radial-gradient(circle at 30% 107%, 
+    #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+footer a:hover i.fas.fa-envelope { color: #EA4335; }
+footer a:hover i.fas.fa-phone { color: #34B7F1; }
+
+/* Fade-in copyright */
+footer p {
+  animation: fadeIn 1.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}

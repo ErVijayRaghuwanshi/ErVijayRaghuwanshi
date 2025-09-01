@@ -43,57 +43,59 @@
   <div id="particles-js"></div>
 
   <!-- Navigation -->
-<nav class="fixed w-full bg-white/80 dark:bg-gray-800/80 backdrop-blur-md shadow-md z-50 transition-colors duration-300">
-  <div class="container mx-auto px-4 py-3">
-    <div class="flex justify-between items-center">
-      
-      <!-- Logo -->
-      <div class="flex items-center space-x-2">
-        <div class="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center">
-          <h1 class="text-white font-bold">VR</h1>
-        </div>
-        <span class="text-xl font-bold">Vijay Raghuwanshi</span>
-      </div>
+  <nav
+    class="fixed w-full bg-white/80 dark:bg-gray-800/80 backdrop-blur-md shadow-md z-50 transition-colors duration-300">
+    <div class="container mx-auto px-4 py-3">
+      <div class="flex justify-between items-center">
 
-      <!-- Desktop Menu -->
-      <div class="hidden md:flex items-center space-x-6">
+        <!-- Logo -->
+        <div class="flex items-center space-x-2">
+          <div
+            class="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center">
+            <h1 class="text-white font-bold">VR</h1>
+          </div>
+          <span class="text-xl font-bold">Vijay Raghuwanshi</span>
+        </div>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex items-center space-x-6">
+          <a href="#about" class="nav-link"><i class="fas fa-user-circle mr-2"></i>About</a>
+          <a href="#skills" class="nav-link"><i class="fas fa-code mr-2"></i>Skills</a>
+          <a href="#education" class="nav-link"><i class="fas fa-graduation-cap mr-2"></i>Education</a>
+          <a href="#projects" class="nav-link"><i class="fas fa-project-diagram mr-2"></i>Projects</a>
+          <a href="#contact" class="nav-link"><i class="fas fa-envelope mr-2"></i>Contact</a>
+          <button id="darkModeToggle"
+            class="p-2 rounded-lg bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors">
+            <i class="fas fa-moon dark:hidden"></i>
+            <i class="fas fa-sun hidden dark:block"></i>
+          </button>
+        </div>
+
+        <!-- Mobile Hamburger -->
+        <button id="menuToggle" class="md:hidden text-2xl focus:outline-none">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu"
+      class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out md:hidden bg-white dark:bg-gray-800 shadow-md">
+      <div class="flex flex-col space-y-4 p-4">
         <a href="#about" class="nav-link"><i class="fas fa-user-circle mr-2"></i>About</a>
         <a href="#skills" class="nav-link"><i class="fas fa-code mr-2"></i>Skills</a>
         <a href="#education" class="nav-link"><i class="fas fa-graduation-cap mr-2"></i>Education</a>
         <a href="#projects" class="nav-link"><i class="fas fa-project-diagram mr-2"></i>Projects</a>
         <a href="#contact" class="nav-link"><i class="fas fa-envelope mr-2"></i>Contact</a>
-        <button id="darkModeToggle"
+        <button id="darkModeToggleMobile"
           class="p-2 rounded-lg bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors">
           <i class="fas fa-moon dark:hidden"></i>
           <i class="fas fa-sun hidden dark:block"></i>
         </button>
       </div>
-
-      <!-- Mobile Hamburger -->
-      <button id="menuToggle" class="md:hidden text-2xl focus:outline-none">
-        <i class="fas fa-bars"></i>
-      </button>
     </div>
-  </div>
 
-  <!-- Mobile Menu -->
-<div id="mobileMenu" 
-     class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out md:hidden bg-white dark:bg-gray-800 shadow-md">
-  <div class="flex flex-col space-y-4 p-4">
-    <a href="#about" class="nav-link"><i class="fas fa-user-circle mr-2"></i>About</a>
-    <a href="#skills" class="nav-link"><i class="fas fa-code mr-2"></i>Skills</a>
-    <a href="#education" class="nav-link"><i class="fas fa-graduation-cap mr-2"></i>Education</a>
-    <a href="#projects" class="nav-link"><i class="fas fa-project-diagram mr-2"></i>Projects</a>
-    <a href="#contact" class="nav-link"><i class="fas fa-envelope mr-2"></i>Contact</a>
-    <button id="darkModeToggleMobile"
-      class="p-2 rounded-lg bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors">
-      <i class="fas fa-moon dark:hidden"></i>
-      <i class="fas fa-sun hidden dark:block"></i>
-    </button>
-  </div>
-</div>
-
-</nav>
+  </nav>
 
 
   <!-- Hero Section -->
@@ -391,7 +393,8 @@
             <h3 class="text-xl font-semibold">CDR & IPDR Analysis Dashboard</h3>
           </div>
           <p class="text-gray-600 dark:text-gray-300 mb-4">
-            CDR & IPDR Intelligence Dashboard — An Interactive Web Platform for Telecom Metadata Analysis, Rule Management, and Target Investigation
+            CDR & IPDR Intelligence Dashboard — An Interactive Web Platform for Telecom Metadata Analysis, Rule
+            Management, and Target Investigation
           </p>
           <a href="https://ervijayraghuwanshi.github.io/CDR_IPDR/"
             class="text-blue-600 dark:text-blue-400 hover:underline inline-flex items-center">
@@ -425,34 +428,49 @@
   <!-- Footer -->
   <footer class="bg-gray-800 text-white py-8">
     <div class="container mx-auto px-4 text-center">
-      <div class="flex justify-center space-x-4 mb-4">
+
+      <!-- Social Links -->
+      <div class="flex flex-wrap justify-center space-x-4 mb-4">
         <a href="https://github.com/ErVijayRaghuwanshi" target="_blank"
           class="text-gray-400 hover:text-white transition group">
-          <i class="fab fa-github text-xl group-hover:animate-bounce"></i>
+          <i class="fab fa-github text-2xl"></i>
         </a>
-        <a href="https://www.linkedin.com/in/ervijayraghuwanshi/"
+        <a href="https://www.linkedin.com/in/ervijayraghuwanshi/" target="_blank"
+          class="text-gray-400 hover:text-white transition group">
+          <i class="fab fa-linkedin text-2xl"></i>
+        </a>
+        <a href="https://wa.me/919755491130?text=Hello%20Vijay,%20I%20came%20across%20your%20portfolio%20and%20would%20like%20to%20connect."
           class="text-gray-400 hover:text-white transition group" target="_blank">
-          <i class="fab fa-linkedin text-xl group-hover:animate-bounce"></i>
-        </a>
-        <a href="https://wa.me/+919755491130" class="text-gray-400 hover:text-white transition group" target="_blank">
           <i class="fab fa-whatsapp text-xl group-hover:animate-bounce"></i>
         </a>
-        <a href="https://x.com/ErVijayRaghu1c" class="text-gray-400 hover:text-white transition group" target="_blank">
-          <i class="fab fa-x text-xl group-hover:animate-bounce"></i>
+
+        <a href="https://x.com/ErVijayRaghu1c" target="_blank" class="text-gray-400 hover:text-white transition group">
+          <i class="fab fa-x text-2xl"></i>
         </a>
-        <a href="https://instagram.com/er.vijayraghuwanshi" class="text-gray-400 hover:text-white transition group"
-          target="_blank">
-          <i class="fab fa-instagram text-xl group-hover:animate-bounce"></i>
+        <a href="https://instagram.com/er.vijayraghuwanshi" target="_blank"
+          class="text-gray-400 hover:text-white transition group">
+          <i class="fab fa-instagram text-2xl"></i>
         </a>
-        <a href="mailto:ervijayraghuwanshi@gmail.com" class="text-gray-400 hover:text-white transition group"
-          target="_blank">
-          <i class="fas fa-envelope text-xl group-hover:animate-bounce"></i>
-        </a>
-        <a href="tel:+919755491130" class="text-gray-400 hover:text-white transition group" target="_blank">
-          <i class="fas fa-phone text-xl group-hover:animate-bounce"></i>
+        <a href="mailto:ervijayraghuwanshi@gmail.com?subject=Portfolio%20Contact&body=Hello%20Vijay,%0A%0AI%20just%20checked%20your%20portfolio%20and%20would%20like%20to%20connect."
+   class="text-gray-400 hover:text-white transition group">
+  <i class="fas fa-envelope text-xl group-hover:animate-bounce"></i>
+</a>
+
+        <a href="tel:+919755491130" target="_blank" class="text-gray-400 hover:text-white transition group">
+          <i class="fas fa-phone text-2xl"></i>
         </a>
       </div>
-      <p>&copy; 2025 Vijay Raghuwanshi. All rights reserved.</p>
+
+      <!-- Divider -->
+      <!-- <hr class="border-gray-600 my-4"> -->
+
+      <!-- Footer Text -->
+      <p class="text-gray-400 text-sm">&copy; 2025 Vijay Raghuwanshi. All rights reserved.</p>
+
+      <!-- Back to Top -->
+      <!-- <a href="#top" class="block mt-4 text-sm text-gray-400 hover:text-white transition">
+      ↑ Back to Top
+    </a> -->
     </div>
   </footer>
 
