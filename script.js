@@ -319,3 +319,17 @@ if (savedTheme && themes.includes(savedTheme)) {
     currentThemeIndex = themes.indexOf(savedTheme);
     setTheme(savedTheme);
 } 
+
+
+// Mobile menu toggle
+const menuToggle = document.getElementById("menuToggle");
+const mobileMenu = document.getElementById("mobileMenu");
+
+menuToggle.addEventListener("click", () => {
+  mobileMenu.classList.toggle("hidden");
+  
+  // Switch hamburger <-> close icon
+  const icon = menuToggle.querySelector("i");
+  icon.classList.toggle("fa-bars");
+  icon.classList.toggle("fa-times");
+});
