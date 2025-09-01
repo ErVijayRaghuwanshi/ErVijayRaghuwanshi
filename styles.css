@@ -1,12 +1,18 @@
 /* Custom Styles */
 :root {
-    --primary-color: #2563eb;
-    --secondary-color: #1e40af;
-    --text-color: #1f2937;
-    --light-bg: #f3f4f6;
-    --dark-bg: #1f2937;
-    --dark-card-bg: #374151;
-    --dark-text: #f3f4f6;
+    /* Primary Colors */
+    --primary-color: #2563eb; /* Main blue color */
+    --secondary-color: #1e40af; /* Darker shade of blue */
+
+    /* Light Theme */
+    --light-bg: #f3f4f6; /* Very light gray background */
+    --light-text: #111827; /* Dark gray text for light backgrounds */
+    --text-color: #1f2937; /* General text color, slightly lighter than dark-text */
+
+    /* Dark Theme */
+    --dark-bg: #1f2937; /* Dark gray background */
+    --dark-card-bg: #374151; /* Slightly lighter gray for cards in dark mode */
+    --dark-text: #f3f4f6; /* Very light gray text for dark backgrounds */
 }
 
 /* Particles Background */
@@ -424,6 +430,7 @@ html {
 .hero-section {
     position: relative;
     overflow: hidden;
+    
 }
 
 .hero-section::before {

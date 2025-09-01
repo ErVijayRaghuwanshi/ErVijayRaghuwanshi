@@ -321,15 +321,49 @@ if (savedTheme && themes.includes(savedTheme)) {
 } 
 
 
-// Mobile menu toggle
+// // Mobile menu toggle
+// const menuToggle = document.getElementById("menuToggle");
+// const mobileMenu = document.getElementById("mobileMenu");
+
+// menuToggle.addEventListener("click", () => {
+//   mobileMenu.classList.toggle("hidden");
+  
+//   // Switch hamburger <-> close icon
+//   const icon = menuToggle.querySelector("i");
+//   icon.classList.toggle("fa-bars");
+//   icon.classList.toggle("fa-times");
+// });
+
+
 const menuToggle = document.getElementById("menuToggle");
 const mobileMenu = document.getElementById("mobileMenu");
+const mobileLinks = mobileMenu.querySelectorAll("a");
 
-menuToggle.addEventListener("click", () => {
-  mobileMenu.classList.toggle("hidden");
-  
-  // Switch hamburger <-> close icon
+function toggleMenu() {
+  if (mobileMenu.classList.contains("max-h-0")) {
+    // Open menu
+    mobileMenu.classList.remove("max-h-0");
+    mobileMenu.classList.add("max-h-96"); // adjust depending on menu height
+  } else {
+    // Close menu
+    mobileMenu.classList.add("max-h-0");
+    mobileMenu.classList.remove("max-h-96");
+  }
+
+  // Toggle icon (hamburger <-> X)
   const icon = menuToggle.querySelector("i");
   icon.classList.toggle("fa-bars");
   icon.classList.toggle("fa-times");
+}
+
+menuToggle.addEventListener("click", toggleMenu);
+
+// Close menu when a link is clicked
+mobileLinks.forEach(link => {
+  link.addEventListener("click", () => {
+    if (!mobileMenu.classList.contains("max-h-0")) {
+      toggleMenu();
+    }
+  });
 });
+
