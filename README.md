@@ -1,79 +1,76 @@
 # 👋 Hi, I’m **Vijay Raghuwanshi**  
 
-Welcome to my GitHub! I’m a passionate **Software Engineer** with 4+ years of experience in API design, cybersecurity, IoT, and building innovative GenAI applications. 🚀  
+💻 **Software Engineer** | 🚀 **GenAI & Big Data Enthusiast** | 🛡 **Cybersecurity Explorer**  
 
----  
+With 4+ years of experience, I design and build **scalable backend systems, AI-powered applications, and real-time data pipelines**. My work spans across **cybersecurity, microservices, streaming analytics, and Generative AI** — always focused on solving tough problems with clean, high-performance solutions.  
 
-## 🌟 About Me  
+---
 
-- 💻 **Current Role**: Software Engineer at ClearTrail Technologies, focusing on API design, network intelligence, and cloud-based solutions.  
-- 🎓 **Education**: Bachelor’s in Electrical and Electronics Engineering, with a strong foundation in software development.  
-- 🌐 **Passion**: I thrive on solving complex problems, exploring cutting-edge technologies like GenAI, and creating user-centric solutions.  
-- 📍 Based in **India**, aspiring for a global impact.  
+## 🌟 Professional Experience  
 
----  
+### 🔹 Software Engineer @ ClearTrail Technologies *(2024 – Present)*  
+- 🚀 Optimized **PostgreSQL queries**, reducing lookup times from *22s ➝ <1s* on a **32M+ row dataset**  
+- 🔐 Built a high-performance **IP Reputation API** handling *1Gbps live traffic* with multithreading  
+- ⚡ Automated deployments with **Jenkins + Docker**, cutting release times by **40%**  
+- 🛠 Designed **Big Data pipelines** (Kafka, Spark, HDFS, Parquet) for **real-time CDR/IPDR analytics**  
+- 🤖 Built an **AI-powered natural language interface** for Elasticsearch using **LLMs**  
+- 📜 Authored API documentation with **Swagger UI** & Markdown for team-wide clarity  
 
-## 🚀 My Technical Toolbox  
+### 🔹 Associate Software Engineer @ ClearTrail Technologies *(2022 – 2024)*  
+- 🌐 Developed **OSINT REST APIs** with advanced scraping & proxy-based solutions  
+- 🏗 Designed **scalable microservices** with Docker for automation workflows  
+- ⚙️ Improved **concurrency & async programming** for high-volume data integration  
 
-### **Languages & Frameworks**  
-- ![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white) ![SQL](https://img.shields.io/badge/-SQL-4479A1?logo=microsoftsqlserver&logoColor=white)
-- ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)
-- ![Bash Script](https://img.shields.io/badge/bash_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-- ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
-- ![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)
+---
 
+## 🧰 Tech Toolbox  
 
-### **Tools & Platforms**  
-- 🐳 **Docker**, Jenkins, Postman, RabbitMQ  
-- ☁️ **AWS**, E2Network Cloud, CI/CD Pipelines  
-- 🛠 **Linux Administration**, Git  
+**Backend & DevOps**  
+`Python` · `Java` · `FastAPI` · `Flask` · `Django` · `Docker` · `Jenkins` · `Git` · `Airflow` · `Bash`  
 
-### **Databases**  
-- 🗂 **PostgreSQL**, **Elasticsearch**, **ChromaDB**  
+**Big Data & Streaming Analytics**  
+`Apache Spark` · `PySpark` · `Kafka` · `HDFS` · `PostgreSQL` · `MongoDB` · `Elasticsearch` · `Solr`  
 
-### **Specialized Skills**  
-- 🤖 **Generative AI (LLMs, LangChain, Gradio, Transformers)**  
-- 🔍 **Web Scraping & Sentiment Analysis**  
-- 🛡 **Cybersecurity & Threat Intelligence**  
+**AI & Data Science**  
+`LLMs` · `LangChain` · `RAG` · `Transformers` · `Pandas` · `Gradio` · `PydanticAI` · `MCP` · `N8N`  
 
----  
+---
 
-## 🌟 Highlights of My Work  
-
-### 🖼 [Prompt Gallery](https://ervijayraghuwanshi.github.io/prompt-gallery)  
-Interactive image search interface with 5,000+ AI-generated images. Built an engaging and user-friendly gallery for exploring the power of text-to-image generation.  
+## 🚀 Featured Projects  
 
 ### 💬 [Zerodha Support RAG Chatbot](http://122.175.194.99:55000/)  
-Developed intelligent chatbots powered by **RAG**, vector databases, and LLMs for exceptional customer assistance and real-time market insights.  
+An **Agentic RAG chatbot** for financial support. Built with **LangChain, Ollama, Gradio, ChromaDB, and PydanticAI**.  
 
-### 🛠 **LightSabre on Laptop** (Ideathon 2024 Award - 2nd Prize 🏆)  
-Innovative ultra-portable network traffic monitoring solution recognized at the Ideathon 2024 competition.  
+### 📊 [CDR & IPDR Analysis Dashboard](https://ervijayraghuwanshi.github.io/CDR_IPDR/)  
+Interactive platform for **telecom metadata analysis**. Features **SQL rule management with AI explanations**, anomaly detection, and real-time dashboards.  
 
----  
+### 🖼 [Prompt Gallery](https://ervijayraghuwanshi.github.io/prompt-gallery)  
+AI-powered image search interface with **5,000+ AI-generated images**, built for creative exploration.  
 
-## 🏅 Certifications  
+### 🛡 LightSabre on Laptop — *Ideathon 2024 (2nd Prize)*  
+Portable **network traffic monitoring** solution, awarded at Ideathon 2024.  
 
-- 🎓 Python 3 Programming Advanced - Udemy  
-- 📊 Exploratory Data Analysis with Python and Pandas - Coursera  
-- 🌐 The Bits and Bytes of Computer Networking - Coursera  
-- 📟 Internet of Things and Embedded Systems - Coursera  
-- 🛠 DevOps Beginners to Advanced with Projects - Udemy  
+---
 
----  
+## 🏅 Certifications & Awards  
 
-## 💡 What Drives Me?  
+- 🎓 **Python 3 Programming Advanced** – Udemy  
+- 📊 **Exploratory Data Analysis with Python & Pandas** – Coursera  
+- 🌐 **The Bits and Bytes of Computer Networking** – Coursera  
+- 📟 **Internet of Things & Embedded Systems** – Coursera  
+- 🛠 **DevOps Beginners to Advanced with Projects** – Udemy  
+- 🏆 **Ideathon 2024 (2nd Prize, ₹30,000)** – LightSabre on Laptop  
+- ⭐ **STAR of the Month & Quarter** – Recognized for key contributions to **LightSabre** and **WebTrail**  
 
-I’m passionate about solving real-world problems through technology, improving user experiences, and contributing to society. I’m always ready to collaborate and take on exciting challenges. 🌱  
+---
 
----  
-
-## 📫 Connect with Me  
+## 📫 Let’s Connect  
 
 - ✉️ [ervijayraghuwanshi@gmail.com](mailto:ervijayraghuwanshi@gmail.com)  
 - 🌐 [LinkedIn](https://www.linkedin.com/in/ervijayraghuwanshi/)  
 - 🐙 [GitHub](https://github.com/ErVijayRaghuwanshi)  
 - 📱 [WhatsApp](https://wa.me/+919755491130)  
 
----  
+---
 
-⭐ **Fun Fact**: "I’m always ready to learn something new and tackle complex challenges with enthusiasm!"  
+⭐ *“Always ready to learn, innovate, and take on challenges with enthusiasm!”*  
