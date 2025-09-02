@@ -190,7 +190,7 @@
         <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
           <div class="flex items-center mb-4">
             <i class="fas fa-code text-2xl text-blue-500 mr-3"></i>
-            <h3 class="text-xl skill-badge font-semibold">Languages & Frameworks</h3>
+            <h3 class="text-xl font-semibold">Languages & Frameworks</h3>
           </div>
           <div class="flex flex-wrap gap-2">
             <span class="skill-badge"><i class="fab fa-python mr-1"></i>Python</span>
@@ -206,7 +206,7 @@
         <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
           <div class="flex items-center mb-4">
             <i class="fas fa-tools text-2xl text-blue-500 mr-3"></i>
-            <h3 class="text-xl skill-badge font-semibold">Tools & Platforms</h3>
+            <h3 class="text-xl font-semibold">Tools & Platforms</h3>
           </div>
           <div class="flex flex-wrap gap-2">
             <span class="skill-badge"><i class="fab fa-linux mr-1"></i>Linux</span>
@@ -225,7 +225,7 @@
         <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
           <div class="flex items-center mb-4">
             <i class="fas fa-star text-2xl text-blue-500 mr-3"></i>
-            <h3 class="text-xl skill-badge font-semibold">Specialized Skills</h3>
+            <h3 class="text-xl font-semibold">Specialized Skills</h3>
           </div>
           <div class="flex flex-wrap gap-2">
             <span class="skill-badge"><i class="fas fa-robot mr-1"></i>GenAI</span>
@@ -253,7 +253,7 @@
         <div class="education-card" data-aos="fade-up" data-aos-delay="100">
           <div class="flex items-center mb-6">
             <i class="fas fa-university text-2xl text-blue-500 mr-3"></i>
-            <h3 class="text-xl skill-badge font-semibold">Education</h3>
+            <h3 class="text-xl font-semibold">Education</h3>
           </div>
           <div class="space-y-4">
             <div class="education-item">
@@ -292,7 +292,7 @@
                 Nutan Higher Secondary School, Sehore
               </p>
               <p class="text-sm text-gray-500 dark:text-gray-400">
-                Grade: 70% | Year: 2016
+                Grade: 70% | Year: 2013
               </p>
             </div>
           </div>
@@ -353,54 +353,76 @@
         <h2 class="text-4xl font-bold" data-aos="fade-up">Featured Projects</h2>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
-          <div class="flex items-center mb-4">
-            <i class="fas fa-images text-2xl text-blue-500 mr-3"></i>
-            <h3 class="text-xl font-semibold">Prompt Gallery</h3>
-          </div>
-          <p class="text-gray-600 dark:text-gray-300 mb-4">Interactive image search interface with 5,000+
-            AI-generated images</p>
-          <a href="https://ervijayraghuwanshi.github.io/prompt-gallery"
-            class="text-blue-600 dark:text-blue-400 hover:underline inline-flex items-center">
-            View Project <i class="fas fa-arrow-right ml-2"></i>
-          </a>
-        </div>
+        <!-- Zerodha Support RAG Chatbot -->
         <div class="project-card" data-aos="fade-up" data-aos-delay="200">
           <div class="flex items-center mb-4">
             <i class="fas fa-robot text-2xl text-blue-500 mr-3"></i>
             <h3 class="text-xl font-semibold">Zerodha Support RAG Chatbot</h3>
           </div>
-          <p class="text-gray-600 dark:text-gray-300 mb-4">Intelligent chatbot powered by RAG and vector
-            databases</p>
-          <a href="http://122.175.194.99:55000/"
+          <p class="text-gray-600 dark:text-gray-300 mb-4">
+            Agentic RAG-based application that simulates a financial support chatbot for Zerodha. Built with
+            <strong>Gradio</strong> for the interface, <strong>LangChain</strong> and <strong>Ollama</strong> for
+            orchestration,
+            <strong>ChromaDB</strong> for vector storage, and <strong>PydanticAI</strong> for schema-validated, reliable
+            responses—
+            delivering accurate, context-aware assistance.
+          </p>
+          <a href="#"
+            class="text-blue-600 dark:text-blue-400 no-underline pointer-events-none inline-flex items-center">
+            View Project <i class="fas fa-arrow-right ml-2"></i>
+          </a>
+        </div>
+
+        <!-- CDR & IPDR Analytics with AI-Enhanced Rule Management -->
+        <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="flex items-center mb-4">
+            <i class="fas fa-database text-2xl text-blue-500 mr-3"></i>
+            <h3 class="text-xl font-semibold">CDR & IPDR Analytics — AI Rule Management</h3>
+          </div>
+          <p class="text-gray-600 dark:text-gray-300 mb-4">
+            Big Data analytics platform for telecom metadata (CDR/IPDR) focused on SQL rule lifecycle management with
+            built-in AI explanations. Law enforcement officers can understand complex SQL in plain language, validate
+            and extend
+            rules, and rapidly develop new detection logic—without deep SQL expertise.
+          </p>
+          <a href="https://ervijayraghuwanshi.github.io/CDR_IPDR/"
+            class="text-blue-600 dark:text-blue-400 no-underline inline-flex items-center">
+            View Project <i class="fas fa-arrow-right ml-2"></i>
+          </a>
+        </div>
+
+        <!-- Prompt Gallery -->
+        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="flex items-center mb-4">
+            <i class="fas fa-images text-2xl text-blue-500 mr-3"></i>
+            <h3 class="text-xl font-semibold">Prompt Gallery</h3>
+          </div>
+          <p class="text-gray-600 dark:text-gray-300 mb-4">
+            Interactive image search platform featuring <strong>5,000+ AI-generated images</strong>.
+            Users can explore creative prompts, search by keywords, and discover inspiration through
+            an infinite-scroll gallery powered by a fast client-side search engine.
+          </p>
+          <a href="https://ervijayraghuwanshi.github.io/prompt-gallery"
             class="text-blue-600 dark:text-blue-400 hover:underline inline-flex items-center">
             View Project <i class="fas fa-arrow-right ml-2"></i>
           </a>
         </div>
+
+        <!-- LightSabre on Laptop -->
         <div class="project-card" data-aos="fade-up" data-aos-delay="300">
           <div class="flex items-center mb-4">
             <i class="fas fa-shield-alt text-2xl text-blue-500 mr-3"></i>
             <h3 class="text-xl font-semibold">LightSabre on Laptop</h3>
           </div>
-          <p class="text-gray-600 dark:text-gray-300 mb-4">Ultra-portable network traffic monitoring solution
-            (Ideathon 2024 Award)</p>
+          <p class="text-gray-600 dark:text-gray-300 mb-4">
+            Ultra-portable <strong>network traffic monitoring solution</strong> designed to analyze
+            high-speed Ethernet links in <strong>air-gapped environments</strong>.
+            Recognized with an award at <strong>Ideathon 2024</strong> for innovation in cybersecurity
+            and real-time network intelligence.
+          </p>
         </div>
 
-        <!-- New CDR_IPDR Project -->
-        <div class="project-card" data-aos="fade-up" data-aos-delay="400">
-          <div class="flex items-center mb-4">
-            <i class="fas fa-database text-2xl text-blue-500 mr-3"></i>
-            <h3 class="text-xl font-semibold">CDR & IPDR Analysis Dashboard</h3>
-          </div>
-          <p class="text-gray-600 dark:text-gray-300 mb-4">
-            CDR & IPDR Intelligence Dashboard — An Interactive Web Platform for Telecom Metadata Analysis, Rule
-            Management, and Target Investigation
-          </p>
-          <a href="https://ervijayraghuwanshi.github.io/CDR_IPDR/"
-            class="text-blue-600 dark:text-blue-400 hover:underline inline-flex items-center">
-            View Project <i class="fas fa-arrow-right ml-2"></i>
-          </a>
-        </div>
+
 
 
       </div>
@@ -433,11 +455,11 @@
       <div class="flex flex-wrap justify-center space-x-4 mb-4">
         <a href="https://github.com/ErVijayRaghuwanshi" target="_blank"
           class="text-gray-400 hover:text-white transition group">
-          <i class="fab fa-github text-2xl"></i>
+          <i class="fab fa-github text-2xl group-hover:animate-bounce"></i>
         </a>
         <a href="https://www.linkedin.com/in/ervijayraghuwanshi/" target="_blank"
           class="text-gray-400 hover:text-white transition group">
-          <i class="fab fa-linkedin text-2xl"></i>
+          <i class="fab fa-linkedin text-2xl group-hover:animate-bounce"></i>
         </a>
         <a href="https://wa.me/919755491130?text=Hello%20Vijay,%20I%20came%20across%20your%20portfolio%20and%20would%20like%20to%20connect."
           class="text-gray-400 hover:text-white transition group" target="_blank">
@@ -445,19 +467,19 @@
         </a>
 
         <a href="https://x.com/ErVijayRaghu1c" target="_blank" class="text-gray-400 hover:text-white transition group">
-          <i class="fab fa-x text-2xl"></i>
+          <i class="fab fa-x text-2xl group-hover:animate-bounce"></i>
         </a>
         <a href="https://instagram.com/er.vijayraghuwanshi" target="_blank"
           class="text-gray-400 hover:text-white transition group">
-          <i class="fab fa-instagram text-2xl"></i>
+          <i class="fab fa-instagram text-2xl group-hover:animate-bounce"></i>
         </a>
         <a href="mailto:ervijayraghuwanshi@gmail.com?subject=Portfolio%20Contact&body=Hello%20Vijay,%0A%0AI%20just%20checked%20your%20portfolio%20and%20would%20like%20to%20connect."
-   class="text-gray-400 hover:text-white transition group">
-  <i class="fas fa-envelope text-xl group-hover:animate-bounce"></i>
-</a>
+          class="text-gray-400 hover:text-white transition group">
+          <i class="fas fa-envelope text-xl group-hover:animate-bounce"></i>
+        </a>
 
         <a href="tel:+919755491130" target="_blank" class="text-gray-400 hover:text-white transition group">
-          <i class="fas fa-phone text-2xl"></i>
+          <i class="fas fa-phone text-2xl group-hover:animate-bounce"></i>
         </a>
       </div>
 
