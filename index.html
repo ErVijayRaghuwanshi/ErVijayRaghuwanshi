@@ -507,6 +507,26 @@
     </div>
   </footer>
 
+
+  <div id="update-toast" style="
+  position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%);
+  background: #333; color: #fff; padding: 10px 20px; border-radius: 5px;
+  display: none; z-index: 1000;">
+  A new version is available.
+  <button id="refresh-btn" style="margin-left:10px; padding: 5px 10px;">Refresh</button>
+</div>
+<script>
+  function showUpdateToast(worker) {
+  const toast = document.getElementById("update-toast");
+  toast.style.display = "block";
+
+  document.getElementById("refresh-btn").onclick = () => {
+    worker.postMessage({ action: "skipWaiting" });
+  };
+}
+
+</script>
+
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="script.js"></script>

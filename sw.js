@@ -28,10 +28,22 @@ self.addEventListener("install", event => {
   self.skipWaiting(); // activate immediately
 });
 
+self.addEventListener("message", event => {
+  if (event.data.action === "skipWaiting") {
+    self.skipWaiting();
+  }
+});
+
+
 // Activate → remove old caches
 self.addEventListener("activate", event => {
   console.log("Service Worker activating...");
   event.waitUntil(
+    self.clients.claim().then(() => {
+      return self.clients.matchAll({ type: "window" }).then(clients => {
+        clients.forEach(client => client.navigate(client.url));
+      });
+    }),
     caches.keys().then(keys =>
       Promise.all(
         keys.filter(key => key !== CACHE_NAME).map(key => caches.delete(key))

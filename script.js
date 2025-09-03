@@ -367,3 +367,21 @@ mobileLinks.forEach(link => {
   });
 });
 
+
+
+
+
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("/ErVijayRaghuwanshi/sw.js").then(reg => {
+    // Listen for updates
+    reg.addEventListener("updatefound", () => {
+      const newWorker = reg.installing;
+      newWorker.addEventListener("statechange", () => {
+        if (newWorker.state === "installed" && navigator.serviceWorker.controller) {
+          // New version available
+          showUpdateToast(newWorker);
+        }
+      });
+    });
+  });
+}
