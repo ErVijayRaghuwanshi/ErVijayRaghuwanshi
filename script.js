@@ -77,19 +77,19 @@ particlesJS('particles-js', {
 });
 
 // Dark Mode Toggle
-const darkModeToggle = document.getElementById('darkModeToggle');
-const html = document.documentElement;
+// const darkModeToggle = document.getElementById('darkModeToggle');
+// const html = document.documentElement;
 
 // Check for saved dark mode preference
-const darkMode = localStorage.getItem('darkMode') === 'true';
-if (darkMode) {
-    html.classList.add('dark');
-}
+// const darkMode = localStorage.getItem('darkMode') === 'true';
+// if (darkMode) {
+//     html.classList.add('dark');
+// }
 
-darkModeToggle.addEventListener('click', () => {
-    html.classList.toggle('dark');
-    localStorage.setItem('darkMode', html.classList.contains('dark'));
-});
+// darkModeToggle.addEventListener('click', () => {
+//     html.classList.toggle('dark');
+//     localStorage.setItem('darkMode', html.classList.contains('dark'));
+// });
 
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
