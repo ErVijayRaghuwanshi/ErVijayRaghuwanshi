@@ -132,7 +132,7 @@ const navLinks = document.querySelectorAll('nav a');
 
 window.addEventListener('scroll', () => {
     let current = '';
-    
+
     sections.forEach(section => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.clientHeight;
@@ -142,7 +142,7 @@ window.addEventListener('scroll', () => {
     });
 
     navLinks.forEach(link => {
-        link.classList.remove('text-blue-600', 'dark:text-blue-400', );
+        link.classList.remove('text-blue-600', 'dark:text-blue-400',);
         if (link.getAttribute('href').slice(1) === current) {
             link.classList.add('text-blue-600', 'dark:text-blue-400');
         }
@@ -237,7 +237,7 @@ function setTheme(themeName) {
 function updateParticlesColor() {
     const computedStyle = getComputedStyle(document.body);
     const primaryColor = computedStyle.getPropertyValue('--theme-primary').trim();
-    
+
     particlesJS('particles-js', {
         particles: {
             number: {
@@ -318,7 +318,7 @@ const savedTheme = localStorage.getItem('theme');
 if (savedTheme && themes.includes(savedTheme)) {
     currentThemeIndex = themes.indexOf(savedTheme);
     setTheme(savedTheme);
-} 
+}
 
 
 // // Mobile menu toggle
@@ -327,7 +327,7 @@ if (savedTheme && themes.includes(savedTheme)) {
 
 // menuToggle.addEventListener("click", () => {
 //   mobileMenu.classList.toggle("hidden");
-  
+
 //   // Switch hamburger <-> close icon
 //   const icon = menuToggle.querySelector("i");
 //   icon.classList.toggle("fa-bars");
@@ -340,31 +340,31 @@ const mobileMenu = document.getElementById("mobileMenu");
 const mobileLinks = mobileMenu.querySelectorAll("a");
 
 function toggleMenu() {
-  if (mobileMenu.classList.contains("max-h-0")) {
-    // Open menu
-    mobileMenu.classList.remove("max-h-0");
-    mobileMenu.classList.add("max-h-96"); // adjust depending on menu height
-  } else {
-    // Close menu
-    mobileMenu.classList.add("max-h-0");
-    mobileMenu.classList.remove("max-h-96");
-  }
+    if (mobileMenu.classList.contains("max-h-0")) {
+        // Open menu
+        mobileMenu.classList.remove("max-h-0");
+        mobileMenu.classList.add("max-h-96"); // adjust depending on menu height
+    } else {
+        // Close menu
+        mobileMenu.classList.add("max-h-0");
+        mobileMenu.classList.remove("max-h-96");
+    }
 
-  // Toggle icon (hamburger <-> X)
-  const icon = menuToggle.querySelector("i");
-  icon.classList.toggle("fa-bars");
-  icon.classList.toggle("fa-times");
+    // Toggle icon (hamburger <-> X)
+    const icon = menuToggle.querySelector("i");
+    icon.classList.toggle("fa-bars");
+    icon.classList.toggle("fa-times");
 }
 
 menuToggle.addEventListener("click", toggleMenu);
 
 // Close menu when a link is clicked
 mobileLinks.forEach(link => {
-  link.addEventListener("click", () => {
-    if (!mobileMenu.classList.contains("max-h-0")) {
-      toggleMenu();
-    }
-  });
+    link.addEventListener("click", () => {
+        if (!mobileMenu.classList.contains("max-h-0")) {
+            toggleMenu();
+        }
+    });
 });
 
 
@@ -372,16 +372,38 @@ mobileLinks.forEach(link => {
 
 
 if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register("/ErVijayRaghuwanshi/sw.js").then(reg => {
-    // Listen for updates
-    reg.addEventListener("updatefound", () => {
-      const newWorker = reg.installing;
-      newWorker.addEventListener("statechange", () => {
-        if (newWorker.state === "installed" && navigator.serviceWorker.controller) {
-          // New version available
-          showUpdateToast(newWorker);
-        }
-      });
+    navigator.serviceWorker.register("/ErVijayRaghuwanshi/sw.js").then(reg => {
+        // Listen for updates
+        reg.addEventListener("updatefound", () => {
+            const newWorker = reg.installing;
+            newWorker.addEventListener("statechange", () => {
+                if (newWorker.state === "installed" && navigator.serviceWorker.controller) {
+                    // New version available
+                    showUpdateToast(newWorker);
+                }
+            });
+        });
     });
-  });
 }
+
+
+
+
+// leetcode stats update
+async function loadLeetCodeStats() {
+    try {
+        const res = await fetch("https://leetcode-stats-api.herokuapp.com/ervijayraghuwanshi");
+        const data = await res.json();
+
+        // Update stats dynamically
+        document.getElementById("totalSolved").textContent = `${data.totalSolved} / ${data.totalQuestions}`;
+        document.getElementById("easySolved").textContent = data.easySolved;
+        document.getElementById("mediumSolved").textContent = data.mediumSolved;
+        document.getElementById("hardSolved").textContent = data.hardSolved;
+
+    } catch (error) {
+        console.error("Error fetching LeetCode stats:", error);
+    }
+}
+
+loadLeetCodeStats();

@@ -78,7 +78,7 @@
           <a href="#skills" class="nav-link"><i class="fas fa-code mr-2"></i>Skills</a>
           <a href="#education" class="nav-link"><i class="fas fa-graduation-cap mr-2"></i>Education</a>
           <a href="#projects" class="nav-link"><i class="fas fa-project-diagram mr-2"></i>Projects</a>
-          <a href="#leetcode-badges" class="nav-link"><i class="fas fa-trophy mr-2"></i>LeetCode Badges</a>
+          <a href="#leetcode" class="nav-link"><i class="fas fa-trophy mr-2"></i>LeetCode Badges</a>
           <a href="#contact" class="nav-link"><i class="fas fa-envelope mr-2"></i>Contact</a>
           <!-- <button id="darkModeToggle"
             class="p-2 rounded-lg bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors">
@@ -102,7 +102,7 @@
         <a href="#skills" class="nav-link"><i class="fas fa-code mr-2"></i>Skills</a>
         <a href="#education" class="nav-link"><i class="fas fa-graduation-cap mr-2"></i>Education</a>
         <a href="#projects" class="nav-link"><i class="fas fa-project-diagram mr-2"></i>Projects</a>
-        <a href="#leetcode-badges" class="nav-link"><i class="fas fa-trophy mr-2"></i>LeetCode Badges</a>
+        <a href="#leetcode" class="nav-link"><i class="fas fa-trophy mr-2"></i>LeetCode Badges</a>
         <a href="#contact" class="nav-link"><i class="fas fa-envelope mr-2"></i>Contact</a>
         <!-- <button id="darkModeToggleMobile"
           class="p-2 rounded-lg bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors">
@@ -134,9 +134,9 @@
           </div>
           <h1 class="text-5xl md:text-6xl font-bold mb-4 hero-text" data-aos="fade-up">Vijay Raghuwanshi</h1>
           <p class="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8" data-aos="fade-up" data-aos-delay="100">
-            <span class="inline-block animate-bounce">👨‍💻</span> Software Engineer |
-            <span class="inline-block animate-bounce">🤖</span> GenAI Specialist |
-            <span class="inline-block animate-bounce">🛡️</span> Cybersecurity Expert
+            <span class="inline-block animate-scale-in">👨‍💻</span> Software Engineer |
+            <span class="inline-block animate-scale-in">🤖</span> GenAI Specialist |
+            <span class="inline-block animate-scale-in">🛡️</span> Cybersecurity Expert
           </p>
           <div class="flex flex-wrap gap-4" data-aos="fade-up" data-aos-delay="200">
             <a href="https://github.com/ErVijayRaghuwanshi" class="btn-primary" target="_blank">
@@ -497,10 +497,8 @@
     </div>
   </section>
 
-  <!-- LeetCode Badges Section -->
-  <!-- <section id="leetcode-badges" class="py-20 bg-white dark:bg-gray-800 transition-colors duration-300 relative"> -->
-  <section id="leetcode-badges" class="transition-colors duration-300 relative transition-colors duration-300 relative">
-    <!-- <div class="absolute inset-0 bg-grid-pattern opacity-5"></div> -->
+  <!-- ================== LEETCODE SECTION ================== -->
+  <section id="leetcode" class="py-20 bg-gray-50 dark:bg-gray-900 transition-colors duration-300 relative">
     <div class="container mx-auto px-4 relative">
 
       <!-- Section Header -->
@@ -510,50 +508,90 @@
       </div>
 
       <!-- Subtitle -->
-      <p class="text-center text-lg text-gray-600 dark:text-gray-300 mb-12" data-aos="fade-up" data-aos-delay="100">
-        Recognitions and milestones earned on <span class="font-semibold text-blue-500"><a href="https://leetcode.com/u/ervijayraghuwanshi/" target="_blank">LeetCode</a></span>.
-      </p>
+      <!-- <p class="text-center text-lg text-gray-600 dark:text-gray-300 mb-12" data-aos="fade-up" data-aos-delay="100">
+        Recognitions and milestones earned on <span class="font-semibold text-blue-500"><a
+            href="https://leetcode.com/u/ervijayraghuwanshi/" target="_blank">LeetCode</a></span>.
+      </p> -->
 
-      <!-- Badges Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-        <!-- Badge 1 -->
-        <div class="project-card text-center" data-aos="fade-up" data-aos-delay="200">
-          <div class="relative w-40 h-40 mx-auto flex items-center justify-center mb-4">
-            <img src="https://assets.leetcode.com/static_assets/others/badge-background.png" alt="Badge Background"
-              class="w-full h-full">
-            <img src="https://assets.leetcode.com/static_assets/others/Introduction_to_Pandas.gif"
-              alt="Introduction to Pandas" class="absolute w-28">
+      <!-- ================== Stats Card ================== -->
+      <div class="bg-white dark:bg-gray-800 shadow-lg rounded-lg p-8 max-w-2xl mx-auto mb-16" data-aos="fade-up"
+        data-aos-delay="100">
+        <!-- Total Solved -->
+        <div class="text-center mb-8">
+          <div id="totalSolved" class="text-4xl font-bold text-blue-600 dark:text-blue-400">
+            Loading...
           </div>
-          <h3 class="text-lg font-semibold">Introduction to Pandas</h3>
+          <p class="text-gray-600 dark:text-gray-400 mt-2">Problems Solved</p>
         </div>
 
-        <!-- Badge 2 -->
-        <div class="project-card text-center" data-aos="fade-up" data-aos-delay="300">
-          <div class="relative w-40 h-40 mx-auto flex items-center justify-center mb-4">
-            <img src="https://assets.leetcode.com/static_assets/others/badge-background.png" alt="Badge Background"
-              class="w-full h-full">
-            <img src="https://assets.leetcode.com/static_assets/others/25100.gif" alt="25/100 Problems"
-              class="absolute w-28">
+        <!-- Breakdown -->
+        <div class="grid grid-cols-3 gap-6 text-center">
+          <div>
+            <p id="easySolved" class="text-2xl font-bold text-green-500">--</p>
+            <p class="text-sm text-gray-600 dark:text-gray-400">Easy</p>
           </div>
-          <h3 class="text-lg font-semibold">25/100 Problems Solved</h3>
-        </div>
-
-        <!-- Badge 3 -->
-        <div class="project-card text-center" data-aos="fade-up" data-aos-delay="400">
-          <div class="relative w-40 h-40 mx-auto flex items-center justify-center mb-4">
-            <img src="https://assets.leetcode.com/static_assets/others/badge-background.png" alt="Badge Background"
-              class="w-full h-full">
-            <img src="https://assets.leetcode.com/static_assets/others/2550.gif" alt="25/50 Problems"
-              class="absolute w-28">
+          <div>
+            <p id="mediumSolved" class="text-2xl font-bold text-yellow-500">--</p>
+            <p class="text-sm text-gray-600 dark:text-gray-400">Medium</p>
           </div>
-          <h3 class="text-lg font-semibold">25/50 Problems Solved</h3>
+          <div>
+            <p id="hardSolved" class="text-2xl font-bold text-red-500">--</p>
+            <p class="text-sm text-gray-600 dark:text-gray-400">Hard</p>
+          </div>
         </div>
 
       </div>
+
+      <!-- ================== Badges Grid ================== -->
+      <div>
+        <!-- <h3 class="text-2xl font-semibold text-center mb-10 text-gray-800 dark:text-white">LeetCode Badges</h3> -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+          <!-- Badge 1 -->
+          <div class="project-card text-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="relative w-40 h-40 mx-auto flex items-center justify-center mb-4">
+              <img src="https://assets.leetcode.com/static_assets/others/badge-background.png" alt="Badge Background"
+                class="w-full h-full">
+              <img src="https://assets.leetcode.com/static_assets/others/Introduction_to_Pandas.gif"
+                alt="Introduction to Pandas" class="absolute w-28">
+            </div>
+            <h3 class="text-lg font-semibold">Introduction to Pandas</h3>
+          </div>
+
+          <!-- Badge 2 -->
+          <div class="project-card text-center" data-aos="fade-up" data-aos-delay="300">
+            <div class="relative w-40 h-40 mx-auto flex items-center justify-center mb-4">
+              <img src="https://assets.leetcode.com/static_assets/others/badge-background.png" alt="Badge Background"
+                class="w-full h-full">
+              <img src="https://assets.leetcode.com/static_assets/others/25100.gif" alt="25/100 Problems"
+                class="absolute w-28">
+            </div>
+            <h3 class="text-lg font-semibold">25/100 Problems Solved</h3>
+          </div>
+
+          <!-- Badge 3 -->
+          <div class="project-card text-center" data-aos="fade-up" data-aos-delay="400">
+            <div class="relative w-40 h-40 mx-auto flex items-center justify-center mb-4">
+              <img src="https://assets.leetcode.com/static_assets/others/badge-background.png" alt="Badge Background"
+                class="w-full h-full">
+              <img src="https://assets.leetcode.com/static_assets/others/2550.gif" alt="25/50 Problems"
+                class="absolute w-28">
+            </div>
+            <h3 class="text-lg font-semibold">25/50 Problems Solved</h3>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ================== CTA ================== -->
+      <div class="text-center mt-16" data-aos="fade-up" data-aos-delay="400">
+        <a href="https://leetcode.com/u/ervijayraghuwanshi/" target="_blank"
+          class="px-6 py-3 bg-blue-600 text-white font-medium rounded-lg shadow-md hover:bg-blue-700 transition">
+          View Full LeetCode Profile →
+        </a>
+      </div>
     </div>
   </section>
-
 
 
 
@@ -583,31 +621,32 @@
       <div class="flex flex-wrap justify-center space-x-4 mb-4">
         <a href="https://github.com/ErVijayRaghuwanshi" target="_blank"
           class="text-gray-400 hover:text-white transition group">
-          <i class="fab fa-github text-2xl group-hover:animate-bounce"></i>
+          <i class="fab fa-github text-2xl group-hover:animate-scale-in"></i>
         </a>
         <a href="https://www.linkedin.com/in/ervijayraghuwanshi/" target="_blank"
           class="text-gray-400 hover:text-white transition group">
-          <i class="fab fa-linkedin text-2xl group-hover:animate-bounce"></i>
+          <i class="fab fa-linkedin text-2xl group-hover:animate-scale-in"></i>
         </a>
         <a href="https://wa.me/919755491130?text=Hello%20Vijay,%20I%20came%20across%20your%20portfolio%20and%20would%20like%20to%20connect."
           class="text-gray-400 hover:text-white transition group" target="_blank">
-          <i class="fab fa-whatsapp text-xl group-hover:animate-bounce"></i>
+          <i class="fab fa-whatsapp text-xl group-hover:animate-scale-in"></i>
         </a>
 
         <a href="https://x.com/ErVijayRaghu1c" target="_blank" class="text-gray-400 hover:text-white transition group">
-          <i class="fab fa-x text-2xl group-hover:animate-bounce"></i>
+          <i class="fab fa-x text-2xl group-hover:animate-scale-in"></i>
         </a>
         <a href="https://instagram.com/er.vijayraghuwanshi" target="_blank"
           class="text-gray-400 hover:text-white transition group">
-          <i class="fab fa-instagram text-2xl group-hover:animate-bounce"></i>
+          <i class="fab fa-instagram text-2xl group-hover:animate-scale-in"></i>
         </a>
-        <a target="_blank" href="mailto:ervijayraghuwanshi@gmail.com?subject=Portfolio%20Contact&body=Hello%20Vijay,%0A%0AI%20just%20checked%20your%20portfolio%20and%20would%20like%20to%20connect."
+        <a target="_blank"
+          href="mailto:ervijayraghuwanshi@gmail.com?subject=Portfolio%20Contact&body=Hello%20Vijay,%0A%0AI%20just%20checked%20your%20portfolio%20and%20would%20like%20to%20connect."
           class="text-gray-400 hover:text-white transition group">
-          <i class="fas fa-envelope text-xl group-hover:animate-bounce"></i>
+          <i class="fas fa-envelope text-xl group-hover:animate-scale-in"></i>
         </a>
 
         <a href="tel:+919755491130" target="_blank" class="text-gray-400 hover:text-white transition group">
-          <i class="fas fa-phone text-2xl group-hover:animate-bounce"></i>
+          <i class="fas fa-phone text-2xl group-hover:animate-scale-in"></i>
         </a>
       </div>
 
@@ -619,8 +658,8 @@
 
       <!-- Back to Top -->
       <!-- <a href="#top" class="block mt-4 text-sm text-gray-400 hover:text-white transition">
-      ↑ Back to Top
-    </a> -->
+        ↑ Back to Top
+      </a> -->
     </div>
   </footer>
 
