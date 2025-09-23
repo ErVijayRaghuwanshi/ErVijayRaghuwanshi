@@ -2,7 +2,7 @@
 
 // Initialize AOS (Animate On Scroll)
 AOS.init({
-    duration: 800,
+    duration: 600,
     offset: 100,
     once: true
 });
@@ -156,7 +156,7 @@ window.addEventListener('load', () => {
         loader.style.opacity = '0';
         setTimeout(() => {
             loader.style.display = 'none';
-        }, 500);
+        }, 300);
     }
 });
 
@@ -188,34 +188,34 @@ if (heroText) {
 }
 
 // Add hover effect to skill badges
-document.querySelectorAll('.skill-badge').forEach(badge => {
-    badge.addEventListener('mouseenter', () => {
-        badge.style.transform = 'translateY(-2px)';
-    });
-    badge.addEventListener('mouseleave', () => {
-        badge.style.transform = 'translateY(0)';
-    });
-});
+// document.querySelectorAll('.skill-badge').forEach(badge => {
+//     badge.addEventListener('mouseenter', () => {
+//         badge.style.transform = 'translateY(-2px)';
+//     });
+//     badge.addEventListener('mouseleave', () => {
+//         badge.style.transform = 'translateY(0)';
+//     });
+// });
 
 // Add hover effect to project cards
-document.querySelectorAll('.project-card').forEach(card => {
-    card.addEventListener('mouseenter', () => {
-        card.style.transform = 'translateY(-5px)';
-    });
-    card.addEventListener('mouseleave', () => {
-        card.style.transform = 'translateY(0)';
-    });
-});
+// document.querySelectorAll('.project-card').forEach(card => {
+//     card.addEventListener('mouseenter', () => {
+//         card.style.transform = 'translateY(-5px)';
+//     });
+//     card.addEventListener('mouseleave', () => {
+//         card.style.transform = 'translateY(0)';
+//     });
+// });
 
 // Add hover effect to contact links
-document.querySelectorAll('.contact-link').forEach(link => {
-    link.addEventListener('mouseenter', () => {
-        link.style.transform = 'translateY(-3px)';
-    });
-    link.addEventListener('mouseleave', () => {
-        link.style.transform = 'translateY(0)';
-    });
-});
+// document.querySelectorAll('.contact-link').forEach(link => {
+//     link.addEventListener('mouseenter', () => {
+//         link.style.transform = 'translateY(-3px)';
+//     });
+//     link.addEventListener('mouseleave', () => {
+//         link.style.transform = 'translateY(0)';
+//     });
+// });
 
 // Theme Management
 const themes = ['theme-purple', 'theme-green', 'theme-red', 'theme-orange'];
@@ -407,3 +407,19 @@ async function loadLeetCodeStats() {
 }
 
 loadLeetCodeStats();
+
+// JavaScript for keyboard shortcuts
+
+document.addEventListener("keydown", (e) => {
+    // Ignore typing in input fields
+    if (["INPUT", "TEXTAREA"].includes(document.activeElement.tagName)) return;
+
+    const key = e.key.toUpperCase();
+    const link = document.querySelector(`.nav-link[data-key="${key}"]`);
+    if (link) {
+        link.click(); // simulate click
+        e.preventDefault(); // prevent default behavior
+    }
+});
+
+
