@@ -423,3 +423,21 @@ document.addEventListener("keydown", (e) => {
 });
 
 
+let altPressed = false;
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === "Alt") {
+        altPressed = true;
+        document.body.classList.add("show-keytips");
+    }
+});
+
+document.addEventListener('keyup', (e) => {
+    if (e.key === "Alt") {
+        altPressed = false;
+        document.body.classList.remove("show-keytips");
+    }
+});
+
+
+
