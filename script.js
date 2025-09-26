@@ -149,16 +149,65 @@ window.addEventListener('scroll', () => {
     });
 });
 
+// Fetch last updated date from GitHub API
+function timeAgo(date) {
+    const now = new Date();
+    const seconds = Math.floor((now - date) / 1000);
+
+    if (seconds < 60) return `${seconds} seconds ago`;
+    const minutes = Math.floor(seconds / 60);
+    if (minutes < 60) return `${minutes} minute${minutes > 1 ? "s" : ""} ago`;
+    const hours = Math.floor(minutes / 60);
+    if (hours < 24) return `${hours} hour${hours > 1 ? "s" : ""} ago`;
+    const days = Math.floor(hours / 24);
+    if (days < 7) return `${days} day${days > 1 ? "s" : ""} ago`;
+    const weeks = Math.floor(days / 7);
+    if (weeks < 4) return `${weeks} week${weeks > 1 ? "s" : ""} ago`;
+    const months = Math.floor(days / 30);
+    if (months < 12) return `${months} month${months > 1 ? "s" : ""} ago`;
+    const years = Math.floor(days / 365);
+    return `${years} year${years > 1 ? "s" : ""} ago`;
+}
+
+// Fetch last updated date from GitHub API
+async function getLastUpdated() {
+    const lastUpdatedElement = document.getElementById("last-updated");
+    const commitMessageElement = document.getElementById("commit-message");
+    lastUpdatedElement.textContent = "Fetching last updated time...";
+
+    try {
+        const response = await fetch(
+            "https://api.github.com/repos/ervijayraghuwanshi/ErVijayRaghuwanshi/commits?per_page=1"
+        );
+        const data = await response.json();
+        const date = new Date(data[0].commit.committer.date);
+        const commit_message = data[0].commit.message;
+
+        lastUpdatedElement.textContent =
+            "Last updated: " + timeAgo(date);
+        commitMessageElement.textContent = `${commit_message}`;
+    } catch (error) {
+        lastUpdatedElement.textContent = "Failed to fetch last updated time.";
+        console.error("Error fetching last updated:", error);
+    }
+}
+
+
 // Loading Animation
-window.addEventListener('load', () => {
-    const loader = document.querySelector('.loading');
+window.addEventListener("load", () => {
+    getLastUpdated();
+    const loader = document.querySelector(".loading");
     if (loader) {
-        loader.style.opacity = '0';
+        // Add delay before starting fade-out
         setTimeout(() => {
-            loader.style.display = 'none';
-        }, 300);
+            loader.style.opacity = "0";
+            setTimeout(() => {
+                loader.style.display = "none";
+            }, 300); // fade-out duration
+        }, 600); // ⬅️ extra delay (in ms)
     }
 });
+
 
 // Parallax Effect for Hero Section
 window.addEventListener('scroll', () => {
@@ -438,6 +487,5 @@ document.addEventListener('keyup', (e) => {
         document.body.classList.remove("show-keytips");
     }
 });
-
 
 
