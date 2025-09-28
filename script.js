@@ -170,6 +170,45 @@ function timeAgo(date) {
 }
 
 // Fetch last updated date from GitHub API
+// async function getLastUpdated() {
+//     const lastUpdatedElement = document.getElementById("last-updated");
+//     const commitMessageElement = document.getElementById("commit-message");
+//     lastUpdatedElement.textContent = "Fetching last updated time...";
+
+//     try {
+//         const response = await fetch(
+//             "https://api.github.com/repos/ervijayraghuwanshi/ErVijayRaghuwanshi/commits?per_page=1"
+//         );
+//         const data = await response.json();
+//         const date = new Date(data[0].commit.committer.date);
+//         const commit_message = data[0].commit.message;
+
+//         lastUpdatedElement.textContent =
+//             "Last updated: " + timeAgo(date);
+//         commitMessageElement.textContent = `${commit_message}`;
+//     } catch (error) {
+//         lastUpdatedElement.textContent = "Failed to fetch last updated time.";
+//         console.error("Error fetching last updated:", error);
+//     }
+// }
+
+
+// Loading Animation
+// window.addEventListener("load", () => {
+//     getLastUpdated();
+//     const loader = document.querySelector(".loading");
+//     if (loader) {
+//         // Add delay before starting fade-out
+//         setTimeout(() => {
+//             loader.style.opacity = "0";
+//             setTimeout(() => {
+//                 loader.style.display = "none";
+//             }, 300); // fade-out duration
+//         }, 900); // ⬅️ extra delay (in ms)
+//     }
+// });
+
+
 async function getLastUpdated() {
     const lastUpdatedElement = document.getElementById("last-updated");
     const commitMessageElement = document.getElementById("commit-message");
@@ -183,30 +222,36 @@ async function getLastUpdated() {
         const date = new Date(data[0].commit.committer.date);
         const commit_message = data[0].commit.message;
 
-        lastUpdatedElement.textContent =
-            "Last updated: " + timeAgo(date);
-        commitMessageElement.textContent = `${commit_message}`;
+        lastUpdatedElement.textContent = "Last updated: " + timeAgo(date);
+        commitMessageElement.textContent = commit_message;
+
+        // ✅ Hide loader only after update
+        hideLoader();
     } catch (error) {
         lastUpdatedElement.textContent = "Failed to fetch last updated time.";
         console.error("Error fetching last updated:", error);
+
+        // Still hide loader after error
+        hideLoader();
     }
 }
 
-
-// Loading Animation
-window.addEventListener("load", () => {
-    getLastUpdated();
+function hideLoader() {
     const loader = document.querySelector(".loading");
     if (loader) {
-        // Add delay before starting fade-out
         setTimeout(() => {
             loader.style.opacity = "0";
             setTimeout(() => {
                 loader.style.display = "none";
-            }, 300); // fade-out duration
-        }, 600); // ⬅️ extra delay (in ms)
+            }, 300);
+        }, 300);
     }
+}
+
+window.addEventListener("load", () => {
+    getLastUpdated(); // loader hides only when fetch completes
 });
+
 
 
 // Parallax Effect for Hero Section
@@ -421,7 +466,7 @@ mobileLinks.forEach(link => {
 
 
 if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("/ErVijayRaghuwanshi/sw.js").then(reg => {
+    navigator.serviceWorker.register("sw.js").then(reg => {
         // Listen for updates
         reg.addEventListener("updatefound", () => {
             const newWorker = reg.installing;
